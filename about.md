@@ -7,7 +7,7 @@ order: 10
 
 <br />
 
-<img style="float: left;" src="{{ site.baseurl }}/assets/img/me.jpg" width="354" height="472">
+<img style="float: left;" src="{{ site.baseurl }}/assets/img/me.jpg" width="177" height="236">
 
 <br />
 ## 소개
