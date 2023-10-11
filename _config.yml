@@ -30,15 +30,14 @@ image:               /assets/img/night_view_newyork.jpeg
 color:               '#4f86aa'
 
 # The font used for headings. Expects a string that is a valid CSS font-family value.
-font_heading:        "'IBM Plex Sans KR', 'Gowun Dodum', 'Orbit', 'Roboto Slab', 'Noto Sans', 'Helvetica', 'Arial', 'Sans-serif'"
+font_heading:        "'IBM Plex Sans KR', 'Gowun Dodum', 'Roboto Slab', 'Sans-serif'"
 
 # The text font. Expects a string that is a valid CSS font-family value.
-font:                "'IBM Plex Sans KR', 'Gowun Dodum', 'Orbit', 'Roboto Slab', 'Noto Sans', 'Helvetica', 'Arial', 'Sans-serif'"
+font:                "'IBM Plex Sans KR', 'Gowun Dodum', 'Roboto Slab', 'Sans-serif'"
 
 # The string encoding what fonts to fetch from Google Fonts.
 # See: https://qwtel.com/hydejack/docs/configuration/
-# google_fonts:        Roboto+Slab:700|Noto+Serif:400,400i,700,700i
-google_fonts:        IBM+Plex+Sans+KR|Gowun+Dodum|Orbit|Roboto+Slab:700
+google_fonts:        IBM+Plex+Sans+KR|Gowun+Dodum|Roboto+Slab:700
 
 # If you do not use a Google Fonts, uncomment the line below
 # no_google_fonts:     true
