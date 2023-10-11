@@ -37,7 +37,8 @@ font:                "'Roboto Slab', 'Helvetica', 'Arial', 'Sans-serif'"
 
 # The string encoding what fonts to fetch from Google Fonts.
 # See: https://qwtel.com/hydejack/docs/configuration/
-google_fonts:        IBM+Plex+Sans+KR|Gowun+Dodum|Orbit
+google_fonts:        Roboto+Slab:700|Noto+Serif:400,400i,700,700i
+# google_fonts:        IBM+Plex+Sans+KR|Gowun+Dodum|Orbit
 
 # If you do not use a Google Fonts, uncomment the line below
 # no_google_fonts:     true
