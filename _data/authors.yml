@@ -19,11 +19,11 @@ isme2n:
       2x:            /assets/img/bear.png
   
   picture_about:
-    src:             /assets/img/bear.png
+    src:             /assets/img/me.jpg
     # srcset is optional, but can be used to provide higher res versions for retina displays
     srcset:
-      1x:            /assets/img/bear.png
-      2x:            /assets/img/bear.png
+      1x:            /assets/img/me.jpg
+      2x:            /assets/img/me.jpg
 
   # Social media icons in sidebar
   # Comment/uncommet to show/hide
