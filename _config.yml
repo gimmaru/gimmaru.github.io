@@ -47,7 +47,7 @@ google_fonts:        IBM+Plex+Sans+KR|Gowun+Dodum|Roboto+Slab:700
 # google_analytics:    UA-92346434-1
 
 # Setting a disqus shortname will enable the comment section on pages with `comments: true` in the front matter
-disqus_shortname:    gimmaru-recording
+disqus_shortname:    gimmaru-github-io
 
 # This text will appear in the footer of every page. Markdown enabled.
 copyright:           '&copy; 2023. by gimmaru'
