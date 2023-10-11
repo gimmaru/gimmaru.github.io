@@ -30,10 +30,10 @@ image:               /assets/img/night_view_newyork.jpeg
 color:               '#4f86aa'
 
 # The font used for headings. Expects a string that is a valid CSS font-family value.
-font_heading:        "'Lato', 'Sans-serif'"
+font_heading:        "'Noto Sans', 'Helvetica', 'Arial', 'Sans-serif'"
 
 # The text font. Expects a string that is a valid CSS font-family value.
-font:                "'Lato', 'Sans-serif'"
+font:                "'Roboto Slab', 'Helvetica', 'Arial', 'Sans-serif'"
 
 # The string encoding what fonts to fetch from Google Fonts.
 # See: https://qwtel.com/hydejack/docs/configuration/
