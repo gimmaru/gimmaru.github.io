@@ -37,8 +37,7 @@ font:                "'Lato', 'Sans-serif'"
 
 # The string encoding what fonts to fetch from Google Fonts.
 # See: https://qwtel.com/hydejack/docs/configuration/
-google_fonts:        IBM+Plex+Sans+KR:wght@400;600&family=Gowun+Dodum&family=Orbit
-# google_fonts:        IBM+Plex+Sans+KR:wght@400;600&family=Gowun+Dodum&family=Orbit
+google_fonts:        IBM+Plex+Sans+KR|Gowun+Dodum|Orbit
 
 # If you do not use a Google Fonts, uncomment the line below
 # no_google_fonts:     true
