@@ -119,7 +119,7 @@
   {% unless site.no_google_fonts %}
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family={{ google_fonts }}">
     <style>
-      html { font-family: {{ font }} }
+      html { font-family: {{ google_fonts }}, {{ font }} }
       h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, .heading { font-family: {{ font_heading }} }
     </style>
   {% endunless %}
