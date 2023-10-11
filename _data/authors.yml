@@ -18,12 +18,12 @@ isme2n:
       1x:            /assets/img/bear.png
       2x:            /assets/img/bear.png
   
-  picture_about:
-    src:             /assets/img/bear.png
-    # srcset is optional, but can be used to provide higher res versions for retina displays
-    srcset:
-      1x:            /assets/img/bear.png
-      2x:            /assets/img/bear.png
+  # picture_about:
+  #   src:             /assets/img/bear.png
+  #   # srcset is optional, but can be used to provide higher res versions for retina displays
+  #   srcset:
+  #     1x:            /assets/img/bear.png
+  #     2x:            /assets/img/bear.png
 
   # Social media icons in sidebar
   # Comment/uncommet to show/hide
