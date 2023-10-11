@@ -2,7 +2,7 @@
 #  User configuration
 # -----------------------------------------------------------------------------
 
-title:               John
+title:               김마루
 
 # The unique resource location of your page.
 # Set to `https://<username>.github.io` when hosting on GitHub Pages
@@ -13,12 +13,12 @@ url:                 https://gimmaru.github.io
 baseurl:             ""
 
 # A very short description of your page
-tagline:             "Home"
+tagline:             ""
 
 # A short description of the page, used in the sidebar and as fallback for the meta description tag.
 # Markdown enabled, but don't use more than one paragraph (enforced by `>`)
 description:         >
-  생각을 기록하기 위한 블로그
+  생각을 적기 위한 블로그
 
 # This should be the same author as first entry in `_data/authors.yml`
 author:
