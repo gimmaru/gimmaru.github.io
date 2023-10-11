@@ -37,11 +37,11 @@
 
 {% assign font = site.font | default:"'Sans-serif'" %}
 {% assign font_heading = site.font_heading | default:"'Helvetica'" %}
-{% assign google_fonts = site.google_fonts | default:"Gowun+Dodum" %}
+{% assign google_fonts = site.google_fonts | default:"IBM+Plex+Sans+KR" %}
 
 {% unless site.no_google_fonts %}
   .wf-active {
-    font-family: {{ font | default:"'Sans-serif'" }};
+    font-family: {{ google_fonts | default:"IBM+Plex+Sans+KR" }};
     h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, .heading { font-family: {{ font_heading | default:"'Sans-serif'" }}; }
   }
 {% endunless %}
