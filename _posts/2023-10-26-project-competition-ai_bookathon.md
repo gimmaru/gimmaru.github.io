@@ -82,3 +82,12 @@ comments: true
 <p><img src="{{ site.baseurl }}/assets/img/image-20211118110833045.png" alt></p>
 <p>그렇게 위와 같은 방식으로 7개의 수필작가 모델로 하여금 소주제에 해당하는 글을 작성하게 함으로써 보다 자연스럽게 이어지는 작품을 만들어낼 수 있었습니다.</p>
 <p>최종 작품은 <a target="_blank" rel="external nofollow noopener noreferrer" href="https://github.com/jskwak98/Bookathon3_Bookie_On_And_On/blob/main/%EB%82%B4%EA%B0%80%20%EB%82%98%EC%99%80%20%ED%95%A8%EA%BB%98%20%EC%82%B4%EC%95%84%EA%B0%80%EB%8A%94%20%EB%B2%95%20(I%20%2B%20I%20%3D%20We%29.md">이곳</a>에서 보실 수 있습니다.</p>
+
+### 마지막으로
+이렇게 무박 2일동안 진행되었던 프로젝트를 무사히 마칠 수 있었습니다.
+
+부족한 점도 많고, 아쉬운 점도 많았지만 짧은 시간안에 다른 팀들과 차별화된 방법론으로 매우 가치있는 작품을 생성해낼 수 있어서 굉장히 좋은 경험이었다고 생각합니다.
+
+이러한 대회를 제공해주신 성균관대학교와, 마인즈랩, 그리고 네이버 클로바팀에게 감사의 인사를 드리며 마치겠습니다.
+
+감사합니다.

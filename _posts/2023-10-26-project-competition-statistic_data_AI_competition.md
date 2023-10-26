@@ -8,13 +8,13 @@ comments: true
 
 ---
 
+<p><img src="{{ site.baseurl }}/assets/img/stat_ai__award_ceremony.jpeg" alt="시상식"></p>
+
 2022년 5월, 통계청에서 주관한 [통계데이터 인공지능 활용대회](https://www.dailian.co.kr/news/view/1110435/?sc=Naver)에 개인으로 참가하여 최우수상(2위)을 수상하였습니다.
 
-![Image Alt 시상식]({{ site.baseurl }}/assets/img/stat_ai__award_ceremony.jpeg)
+<p><img src="{{ site.baseurl }}/assets/img/stat_ai__poster.jpeg" alt="대회 포스터"></p>
 
 대회는 **자연어 기반 인공지능 산업분류 자동화**를 주제로 진행되었습니다. 특정 산업을 표현하는 20 ~ 30자 길이의 텍스트가 입력되었을 때 230개 산업 중 어떤 산업으로 분류할지 예측하는 텍스트 분류 문제를 다루었고, 100만 개의 학습용 데이터와 10만 개의 검증용 데이터가 주어졌습니다.
-
-![Image Alt 대회 포스터]({{ site.baseurl }}/assets/img/stat_ai__poster.jpeg)
 
 당시 부스트캠프 AI Tech를 수료한 후 궁금했지만 시간 부족으로 제대로 공부하지 못하고 넘어간 부분을 채워가고 있었습니다.
 
@@ -205,105 +205,106 @@ TAPT는 사전 학습된 모델을 불러와서 바로 원하는 테스크에 �
 
 Encoder 모델을 활용했기에 허깅페이스에서 제공하는 Masked Language Modeling 학습 코드를 참고하여 TAPT를 진행하였습니다.
 
-```python
-import wandb
-import pickle
-import transformers
-from dataclasses import dataclass
-from transformers import (
-    AutoModelForMaskedLM,
-    AutoTokenizer,
-    AutoConfig,
-    DataCollatorForLanguageModeling,
-    TrainingArguments,
-    Trainer
-)
-from datasets import load_from_disk, concatenate_datasets
+- 관련 코드 발췌
+    ```python
+    import wandb
+    import pickle
+    import transformers
+    from dataclasses import dataclass
+    from transformers import (
+        AutoModelForMaskedLM,
+        AutoTokenizer,
+        AutoConfig,
+        DataCollatorForLanguageModeling,
+        TrainingArguments,
+        Trainer
+    )
+    from datasets import load_from_disk, concatenate_datasets
 
 
-@dataclass
-class PathCfg:
-    data = "/content/drive/MyDrive/finda/ai_contest/dataset"
-    model = "/content/drive/MyDrive/finda/ai_contest/model"
+    @dataclass
+    class PathCfg:
+        data = "/content/drive/MyDrive/finda/ai_contest/dataset"
+        model = "/content/drive/MyDrive/finda/ai_contest/model"
 
-@dataclass
-class TaptCfg:
-    epochs = 90
-    batch_size = 64
-    grad_accumulation_steps = 4
-    learning_rate = 1e-5
-    adam_epsilon = 1e-6
-    adam_beta1 = 0.9
-    adam_beta2 = 0.98
-    lr_scheduler = "constant"
-    weight_decay = 0.01
+    @dataclass
+    class TaptCfg:
+        epochs = 90
+        batch_size = 64
+        grad_accumulation_steps = 4
+        learning_rate = 1e-5
+        adam_epsilon = 1e-6
+        adam_beta1 = 0.9
+        adam_beta2 = 0.98
+        lr_scheduler = "constant"
+        weight_decay = 0.01
 
-N = 4
+    N = 4
 
-checkpoint = f"{PathCfg.model}/TAPT/{N-1}/checkpoint-54467"
-tokenizer = AutoTokenizer.from_pretrained(checkpoint)
-model = AutoModelForMaskedLM.from_pretrained(checkpoint)
+    checkpoint = f"{PathCfg.model}/TAPT/{N-1}/checkpoint-54467"
+    tokenizer = AutoTokenizer.from_pretrained(checkpoint)
+    model = AutoModelForMaskedLM.from_pretrained(checkpoint)
 
-print(f"\ncheckpoint: {checkpoint}\ntrial: {N}")
-
-
-dataset = load_from_disk(f"{PathCfg.data}/base_dataset")
-
-def tokenize_function(examples):
-    result = tokenizer(examples["text"])
-    # if tokenizer.is_fast:
-    #     result["word_ids"] = [result.word_ids(i) for i in range(len(result["input_ids"]))]
-    return result
-
-tokenized_datasets = dataset.map(
-    tokenize_function, batched=True, remove_columns=['AI_id', 'digit_1', 'digit_2', 'digit_3', 'text']
-)
-
-data_collator = DataCollatorForLanguageModeling(tokenizer=tokenizer, mlm_probability=0.15)
+    print(f"\ncheckpoint: {checkpoint}\ntrial: {N}")
 
 
-logging_steps = len(tokenized_datasets["train"]) // (TaptCfg.batch_size * TaptCfg.grad_accumulation_steps * 2)
-print(f"trial: {N}")
-print(f"logging_steps: {logging_steps}")
+    dataset = load_from_disk(f"{PathCfg.data}/base_dataset")
 
-training_args = TrainingArguments(
-    output_dir=f"{PathCfg.model}/TAPT/{N}",
-    logging_dir=f"{PathCfg.model}/TAPT/{N}/log",
-    evaluation_strategy="steps",
-    num_train_epochs=TaptCfg.epochs,
-    per_device_train_batch_size=TaptCfg.batch_size,
-    per_device_eval_batch_size=TaptCfg.batch_size,
-    gradient_accumulation_steps=TaptCfg.grad_accumulation_steps,
-    learning_rate=TaptCfg.learning_rate,
-    adam_epsilon=TaptCfg.adam_epsilon,
-    adam_beta1=TaptCfg.adam_beta1,
-    adam_beta2=TaptCfg.adam_beta2,
-    lr_scheduler_type=TaptCfg.lr_scheduler,
-    weight_decay=TaptCfg.weight_decay,
-    fp16=True,
-    logging_steps=logging_steps,
-    save_steps=logging_steps,
-    eval_steps=logging_steps,
-    report_to="wandb",
-    run_name=f"TAPT_{N}",
-    seed=42,
-)
+    def tokenize_function(examples):
+        result = tokenizer(examples["text"])
+        # if tokenizer.is_fast:
+        #     result["word_ids"] = [result.word_ids(i) for i in range(len(result["input_ids"]))]
+        return result
 
-trainer = Trainer(
-    model=model,
-    args=training_args,
-    train_dataset=tokenized_datasets["train"],
-    eval_dataset=tokenized_datasets["test"],
-    data_collator=data_collator,
-    tokenizer=tokenizer,
-)
+    tokenized_datasets = dataset.map(
+        tokenize_function, batched=True, remove_columns=['AI_id', 'digit_1', 'digit_2', 'digit_3', 'text']
+    )
 
-# Train
-trainer.train(checkpoint)
-wandb.finish()
-```
+    data_collator = DataCollatorForLanguageModeling(tokenizer=tokenizer, mlm_probability=0.15)
 
-![Image Alt TAPT 적용 전후 비교]({{ site.baseurl }}/assets/img/stat_ai__tapt_comparision.png)
+
+    logging_steps = len(tokenized_datasets["train"]) // (TaptCfg.batch_size * TaptCfg.grad_accumulation_steps * 2)
+    print(f"trial: {N}")
+    print(f"logging_steps: {logging_steps}")
+
+    training_args = TrainingArguments(
+        output_dir=f"{PathCfg.model}/TAPT/{N}",
+        logging_dir=f"{PathCfg.model}/TAPT/{N}/log",
+        evaluation_strategy="steps",
+        num_train_epochs=TaptCfg.epochs,
+        per_device_train_batch_size=TaptCfg.batch_size,
+        per_device_eval_batch_size=TaptCfg.batch_size,
+        gradient_accumulation_steps=TaptCfg.grad_accumulation_steps,
+        learning_rate=TaptCfg.learning_rate,
+        adam_epsilon=TaptCfg.adam_epsilon,
+        adam_beta1=TaptCfg.adam_beta1,
+        adam_beta2=TaptCfg.adam_beta2,
+        lr_scheduler_type=TaptCfg.lr_scheduler,
+        weight_decay=TaptCfg.weight_decay,
+        fp16=True,
+        logging_steps=logging_steps,
+        save_steps=logging_steps,
+        eval_steps=logging_steps,
+        report_to="wandb",
+        run_name=f"TAPT_{N}",
+        seed=42,
+    )
+
+    trainer = Trainer(
+        model=model,
+        args=training_args,
+        train_dataset=tokenized_datasets["train"],
+        eval_dataset=tokenized_datasets["test"],
+        data_collator=data_collator,
+        tokenizer=tokenizer,
+    )
+
+    # Train
+    trainer.train(checkpoint)
+    wandb.finish()
+    ```
+
+<p><img src="{{ site.baseurl }}/assets/img/stat_ai__tapt_comparision.png" alt="TAPT 적용 전후 비교"></p>
 
 klue/roberta-large 모델에 TAPT를 진행한 다음 파인튜닝한 결과, 검증 데이터셋에서 Accuracy 점수가 소폭 상승하였습니다.
 
@@ -325,152 +326,153 @@ Word2Vec 모델을 학습시킬 때 계산량을 줄이기 위해 Negative Sampl
 
 새로운 레이어가 추가되면 모델의 표현력이 향상되어 오버피팅될 가능성이 커지지만 모델 앙상블과 드롭 아웃을 통해 완화할 수 있을 것으로 판단하였습니다.
 
-```python
-from dataclasses import dataclass
-from collections import OrderedDict
-from typing import Any, BinaryIO, ContextManager, Dict, List, Optional, Tuple, Union
-import numpy as np
-import torch
-import torch.nn as nn
-from torch.nn import BCEWithLogitsLoss, CrossEntropyLoss, MSELoss
-from transformers.file_utils import ModelOutput
-from transformers.modeling_outputs import SequenceClassifierOutput
-from transformers.models.roberta.modeling_roberta import RobertaClassificationHead, RobertaForSequenceClassification
-from transformers import RobertaPreTrainedModel, RobertaModel, AutoConfig
+- 관련 코드 발췌
+    ```python
+    from dataclasses import dataclass
+    from collections import OrderedDict
+    from typing import Any, BinaryIO, ContextManager, Dict, List, Optional, Tuple, Union
+    import numpy as np
+    import torch
+    import torch.nn as nn
+    from torch.nn import BCEWithLogitsLoss, CrossEntropyLoss, MSELoss
+    from transformers.file_utils import ModelOutput
+    from transformers.modeling_outputs import SequenceClassifierOutput
+    from transformers.models.roberta.modeling_roberta import RobertaClassificationHead, RobertaForSequenceClassification
+    from transformers import RobertaPreTrainedModel, RobertaModel, AutoConfig
 
 
-"""
-사용 예시
-config = AutoConfig.from_pretrained(cfg.checkpoint, num_labels=225)
-model = AddLSTMForSequenceClassification(config=config, checkpoint=cfg.checkpoint)
-"""
+    """
+    사용 예시
+    config = AutoConfig.from_pretrained(cfg.checkpoint, num_labels=225)
+    model = AddLSTMForSequenceClassification(config=config, checkpoint=cfg.checkpoint)
+    """
 
-class RobertaClassificationHeadForLSTM(nn.Module):
-    """Head for sentence-level classification tasks."""
+    class RobertaClassificationHeadForLSTM(nn.Module):
+        """Head for sentence-level classification tasks."""
 
-    def __init__(self, config):
-        super().__init__()
-        self.dense = nn.Linear(config.hidden_size, config.hidden_size)
-        classifier_dropout = (
-            config.classifier_dropout if config.classifier_dropout is not None else config.hidden_dropout_prob
-        )
-        self.dropout = nn.Dropout(0.2)
-        self.out_proj = nn.Linear(config.hidden_size, config.num_labels)
+        def __init__(self, config):
+            super().__init__()
+            self.dense = nn.Linear(config.hidden_size, config.hidden_size)
+            classifier_dropout = (
+                config.classifier_dropout if config.classifier_dropout is not None else config.hidden_dropout_prob
+            )
+            self.dropout = nn.Dropout(0.2)
+            self.out_proj = nn.Linear(config.hidden_size, config.num_labels)
 
-    def forward(self, features, **kwargs):
-        x = self.dense(features)
-        x = torch.tanh(x)
-        x = self.dropout(x)
-        x = self.out_proj(x)
-        return x
+        def forward(self, features, **kwargs):
+            x = self.dense(features)
+            x = torch.tanh(x)
+            x = self.dropout(x)
+            x = self.out_proj(x)
+            return x
 
 
-class AddLSTMForSequenceClassification(RobertaForSequenceClassification):
-    def __init__(self, config, checkpoint):
-        super().__init__(config)
-        self.num_labels = config.num_labels
-        self.config = config
+    class AddLSTMForSequenceClassification(RobertaForSequenceClassification):
+        def __init__(self, config, checkpoint):
+            super().__init__(config)
+            self.num_labels = config.num_labels
+            self.config = config
 
-        self.model = RobertaModel.from_pretrained(checkpoint, config=config, add_pooling_layer=False)
-        self.norm = nn.LayerNorm(config.hidden_size)
+            self.model = RobertaModel.from_pretrained(checkpoint, config=config, add_pooling_layer=False)
+            self.norm = nn.LayerNorm(config.hidden_size)
 
-        self.dropout = nn.Dropout(0.2)
-        self.BiLSTM = nn.LSTM(
-            config.hidden_size,
-            config.hidden_size,
-            # LSTM 층을 더 쌓고 싶다면 num_layers 수정
-            num_layers=1,
-            batch_first=True,
-            dropout=0.2,
-            bidirectional=True
-        )
+            self.dropout = nn.Dropout(0.2)
+            self.BiLSTM = nn.LSTM(
+                config.hidden_size,
+                config.hidden_size,
+                # LSTM 층을 더 쌓고 싶다면 num_layers 수정
+                num_layers=1,
+                batch_first=True,
+                dropout=0.2,
+                bidirectional=True
+            )
 
-        self.classifier = RobertaClassificationHeadForLSTM(config)
+            self.classifier = RobertaClassificationHeadForLSTM(config)
 
-        # self.init_weights()
+            # self.init_weights()
 
-    def forward(
-        self,
-        input_ids=None,
-        attention_mask=None,
-        token_type_ids=None,
-        position_ids=None,
-        head_mask=None,
-        inputs_embeds=None,
-        labels=None,
-        output_attentions=None,
-        output_hidden_states=None,
-        return_dict=None,
-    ):
-        r"""
-        labels (:obj:`torch.LongTensor` of shape :obj:`(batch_size,)`, `optional`):
-            Labels for computing the sequence classification/regression loss. Indices should be in :obj:`[0, ...,
-            config.num_labels - 1]`. If :obj:`config.num_labels == 1` a regression loss is computed (Mean-Square loss),
-            If :obj:`config.num_labels > 1` a classification loss is computed (Cross-Entropy).
-        """
-        return_dict = return_dict if return_dict is not None else self.config.use_return_dict
+        def forward(
+            self,
+            input_ids=None,
+            attention_mask=None,
+            token_type_ids=None,
+            position_ids=None,
+            head_mask=None,
+            inputs_embeds=None,
+            labels=None,
+            output_attentions=None,
+            output_hidden_states=None,
+            return_dict=None,
+        ):
+            r"""
+            labels (:obj:`torch.LongTensor` of shape :obj:`(batch_size,)`, `optional`):
+                Labels for computing the sequence classification/regression loss. Indices should be in :obj:`[0, ...,
+                config.num_labels - 1]`. If :obj:`config.num_labels == 1` a regression loss is computed (Mean-Square loss),
+                If :obj:`config.num_labels > 1` a classification loss is computed (Cross-Entropy).
+            """
+            return_dict = return_dict if return_dict is not None else self.config.use_return_dict
 
-        outputs = self.model(
-            input_ids,
-            attention_mask=attention_mask,
-            token_type_ids=token_type_ids,
-            position_ids=position_ids,
-            head_mask=head_mask,
-            inputs_embeds=inputs_embeds,
-            output_attentions=output_attentions,
-            output_hidden_states=output_hidden_states,
-            return_dict=return_dict,
-        )
+            outputs = self.model(
+                input_ids,
+                attention_mask=attention_mask,
+                token_type_ids=token_type_ids,
+                position_ids=position_ids,
+                head_mask=head_mask,
+                inputs_embeds=inputs_embeds,
+                output_attentions=output_attentions,
+                output_hidden_states=output_hidden_states,
+                return_dict=return_dict,
+            )
 
-        sequence_output = outputs[0] # 모델 아웃풋
-        sequence_output = self.dropout(sequence_output)
+            sequence_output = outputs[0] # 모델 아웃풋
+            sequence_output = self.dropout(sequence_output)
 
-        lstm_outputs = self.BiLSTM(sequence_output)[0] # LSTM 아웃풋 중 히든 스테이트 벡터를 추출
-        lstm_output = lstm_outputs[:, -1, :] # 마지막 시점의 히든 스테이트 벡터 추출
+            lstm_outputs = self.BiLSTM(sequence_output)[0] # LSTM 아웃풋 중 히든 스테이트 벡터를 추출
+            lstm_output = lstm_outputs[:, -1, :] # 마지막 시점의 히든 스테이트 벡터 추출
 
-        # 정방향으로 계산을 진행하며 나온 벡터와 역방향으로 진행하며 나온 벡터를 나눈 다음 합했습니다.
-        lstm_output = lstm_output[:, :self.config.hidden_size] + lstm_output[:, self.config.hidden_size:]
+            # 정방향으로 계산을 진행하며 나온 벡터와 역방향으로 진행하며 나온 벡터를 나눈 다음 합했습니다.
+            lstm_output = lstm_output[:, :self.config.hidden_size] + lstm_output[:, self.config.hidden_size:]
 
-        # Residual Connection
-        # LSTM 히든 스테이트 벡터와 RoBERTa 히든 스테이트 벡터(각 시퀀스 벡터를 모두 합한 것([CLS] X))의 예측 시 비중을
-        # LayerNorm을 통해 학습되도록 유도
-        output = self.norm(torch.sum(sequence_output, dim=-2)) + self.norm(self.dropout(lstm_output))
-        logits = self.classifier(output)
+            # Residual Connection
+            # LSTM 히든 스테이트 벡터와 RoBERTa 히든 스테이트 벡터(각 시퀀스 벡터를 모두 합한 것([CLS] X))의 예측 시 비중을
+            # LayerNorm을 통해 학습되도록 유도
+            output = self.norm(torch.sum(sequence_output, dim=-2)) + self.norm(self.dropout(lstm_output))
+            logits = self.classifier(output)
 
-        loss = None
-        if labels is not None:
-            if self.config.problem_type is None:
-                if self.num_labels == 1:
-                    self.config.problem_type = "regression"
-                elif self.num_labels > 1 and (labels.dtype == torch.long or labels.dtype == torch.int):
-                    self.config.problem_type = "single_label_classification"
-                else:
-                    self.config.problem_type = "multi_label_classification"
+            loss = None
+            if labels is not None:
+                if self.config.problem_type is None:
+                    if self.num_labels == 1:
+                        self.config.problem_type = "regression"
+                    elif self.num_labels > 1 and (labels.dtype == torch.long or labels.dtype == torch.int):
+                        self.config.problem_type = "single_label_classification"
+                    else:
+                        self.config.problem_type = "multi_label_classification"
 
-            if self.config.problem_type == "regression":
-                loss_fct = MSELoss()
-                if self.num_labels == 1:
-                    loss = loss_fct(logits.squeeze(), labels.squeeze())
-                else:
+                if self.config.problem_type == "regression":
+                    loss_fct = MSELoss()
+                    if self.num_labels == 1:
+                        loss = loss_fct(logits.squeeze(), labels.squeeze())
+                    else:
+                        loss = loss_fct(logits, labels)
+                elif self.config.problem_type == "single_label_classification":
+                    loss_fct = CrossEntropyLoss()
+                    loss = loss_fct(logits.view(-1, self.num_labels), labels.view(-1))
+                elif self.config.problem_type == "multi_label_classification":
+                    loss_fct = BCEWithLogitsLoss()
                     loss = loss_fct(logits, labels)
-            elif self.config.problem_type == "single_label_classification":
-                loss_fct = CrossEntropyLoss()
-                loss = loss_fct(logits.view(-1, self.num_labels), labels.view(-1))
-            elif self.config.problem_type == "multi_label_classification":
-                loss_fct = BCEWithLogitsLoss()
-                loss = loss_fct(logits, labels)
 
-        if not return_dict:
-            output = (logits,) + outputs[2:]
-            return ((loss,) + output) if loss is not None else output
+            if not return_dict:
+                output = (logits,) + outputs[2:]
+                return ((loss,) + output) if loss is not None else output
 
-        return SequenceClassifierOutput(
-            loss=loss,
-            logits=logits,
-            hidden_states=outputs.hidden_states,
-            attentions=outputs.attentions,
-        )
-```
+            return SequenceClassifierOutput(
+                loss=loss,
+                logits=logits,
+                hidden_states=outputs.hidden_states,
+                attentions=outputs.attentions,
+            )
+    ```
 
 ### 6. 앙상블
 모델 아키텍처는 RoBERTa 하나만 사용했지만, 다양한 방법들을 적용하거나 large, base, small 같이 모델 사이즈를 달리하여 모델 별로 조금씩 차이를 두고 학습하였습니다. 이를 통해 모델 별로 조금씩 다른 결과를 유도하고 그 결과를 앙상블하여 오버피팅을 완화하였습니다.
