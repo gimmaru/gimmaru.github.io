@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "제 3회 북커톤"
+title:  "제 3회 북커톤 대상 후기"
 subtitle:   "부제"
 categories: project
 tags: competition
@@ -44,7 +44,7 @@ comments: true
 <p><img src="{{ site.baseurl }}/assets/img/image-20211118092147516.png" alt="제목 및 소주제"></p>
 <p>저희는 이와같이 소주제를 선정하였고, 각각의 소주제에 해당하는 문장들을 Query 로 하여 Retrieval 을 진행하기로 하였습니다.</p>
 <h3 id="Retrieval"><a href="#Retrieval" class="headerlink" title="Retrieval"></a>Retrieval</h3><p><img src="{{ site.baseurl }}/assets/img/image-20211106223121104.png" alt="ODQA Workflow"></p>
-<p>Open Domain Question Answering 과제에서는 Query 가 들어오면 Wiipedia 에서 주어진 쿼리와 유사한 Passage 들을 가져오는 Retrieval 시스템이 존재합니다. 이와 유사하게 저희의 소주제를 쿼리로 하여 수집한 약 3만 건의 데이터에서 유사도가 높은 문장들을 가져오는 Retrieval 을 구현하게 되었습니다. TF-IDF, Dense Passage Retrieval 등 다양한 방법이 많았지만 저희는 bm25 를 사용한 Elastic Search 를 사용하게 되었습니다.</p>
+<p>Open Domain Question Answering 과제에서는 Query 가 들어오면 Wikipedia 에서 주어진 쿼리와 유사한 Passage 들을 가져오는 Retrieval 시스템이 존재합니다. 이와 유사하게 저희의 소주제를 쿼리로 하여 수집한 약 3만 건의 데이터에서 유사도가 높은 문장들을 가져오는 Retrieval 을 구현하게 되었습니다. TF-IDF, Dense Passage Retrieval 등 다양한 방법이 많았지만 저희는 bm25 를 사용한 Elastic Search 를 사용하게 되었습니다.</p>
 <p>Elastic Search 는 오픈소스 검색엔진으로 빠른 속도로 방대한 양의 문서를 검색할 수 있습니다. BM25 scoring 알고리즘과 Nori Tokenizer 를 사용하여 저희가 수집한 데이터의 Sparse Embedding 을 만들어냈고 쿼리와의 유사도를 기반으로 관련 주제에 걸맞는 알맞은 Text 를 불러오게 하였습니다.</p>
 <p>하지만 Retrieval 에 Pilot Test 를 진행하고 정성적으로 평가하였을 때 생각보다 의미에 매칭되는 텍스트가 별로 없었습니다. 이것의 원인으로는 Sparse Embedding 의 특성상 단어의 빈도, 문장 길이 등을 고려하기 때문에 저희의 소주제와 의미적으로 유사한 텍스트를 가져오지 못한다는 것을 에상할 수 있었습니다. 따라서 저희는 소주제를 대표하는 Keyword 를 일일이 뽑아내었고, 그 중에서 총 7개의 Query 를 만들어낼 수 있었습니다. 7개의 쿼리는 아래와 같습니다.</p>
 <ul>
