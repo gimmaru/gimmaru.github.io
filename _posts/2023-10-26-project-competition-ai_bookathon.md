@@ -10,10 +10,10 @@ comments: true
 
 2021년 11월, 부스트캠프를 통해 만난 팀원들과 제 3회 AI x Bookathon 대회에 참가하였습니다.
 
-저의 역할은 모델 학습을 위한 데이터 수집 및 전처리였습니다. 5명의 팀원이 무박2일동안 한숨도 안자가면서 열중했고, 그 결과 대상을 수상할 수 있었습니다.
+저의 역할은 모델 학습을 위한 데이터 수집 및 전처리였습니다. 5명의 팀원이 무박2일동안 한숨도 안자가면서 열중했습니다.
 
 <p>제 3회 AI x Bookathon 은 성균관대학교와 MindsLab 이 협약하여 주최되었고, Naver Clova 의 후원으로 진행되었습니다. 약 60여개 팀이 참여했던 예선을 거쳐 총 15개의 팀이 본선에 참여하게 되었습니다. 본선에서는 16일 오후 3시부터 17일 오후 12시까지, 참여팀들은 21시간동안 2만자의 수필을 생성해야 했습니다.</p>
-<p><img src="{{ site.baseurl }}/assets/img/image-3rd_ai_bookathon.jpg" alt="대회 포스터"></p>
+<p><img src="{{ site.baseurl }}/assets/img/3rd_ai_bookathon.jpg" alt="대회 포스터"></p>
 <p>21시간이라는 짧은 시간이었지만 주제 선정 과정부터 모델링, 생성과정에서 여러 문제를 해결하고 차별점을 두기 위해 많은 시도와 실험을 하였고, 결과적으로 1등을 하며 대상을 받을 수 있었습니다.</p>
 <p>막연한 순간들이 매우 많았지만, 그럼에도 여러 시행착오를 겪고 극복하며 완성도 있는 작품을 만들어낸 저희의 이야기가 좋은 레퍼런스가 되길 바라면서 시작해 보겠습니다.</p>
 <p><a target="_blank" rel="external nofollow noopener noreferrer" href="https://github.com/jskwak98/Bookathon3_Bookie_On_And_On">&gt;&gt; 코드 보러가기</a></p>
