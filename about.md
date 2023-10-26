@@ -15,6 +15,8 @@ AI와 투자에 관심있는 학생입니다.
 
 관련 역량을 기르고자 노력하고 있습니다.
 
+<br />
+
 ## 교육사항
 
 - **동국대학교, 2017년 3월 - 2024년 2월**
@@ -29,16 +31,22 @@ AI와 투자에 관심있는 학생입니다.
 
   과학기술정보통신부 ・ 한국데이터산업진흥원, 데이터사이언스 기반 지능소프트웨어 과정 수료
 
+<br />
+
 ## 경험
 
 - **Research Intern at KAIST [LK Lab](https://lklab.kaist.ac.kr/), 2022년 8월 - 2023년 2월**
 - **Contribute to [OSLO](https://github.com/tunib-ai/oslo), 2022년 3월 - 2022년 8월**
+
+<br />
 
 ## Publications
 ### **2023**
 - **[Improving Probability-based Prompt Selection Through Unified Evaluation and Analysis](https://arxiv.org/abs/2305.14877)**
   
   Sohee Yang, Jonghyeon Kim, Joel Jang, Seonghyeon Ye, Hyunji Lee, Minjoon Seo
+
+<br />
 
 ## 수상내역
 ### **2022**
@@ -53,7 +61,9 @@ AI와 투자에 관심있는 학생입니다.
 
 - **[2021 빅콘테스트, 지역활성화 부문](http://www.ksmnews.co.kr/news/view.php?idx=361561)**
 
-  한국지능정보사회진흥원, 우수상
+  과학기술정보통신부 ・ 한국지능정보사회진흥원, 우수상
+
+<br />
 
 ## 자격증
 - 정보처리기사, 2023.09.01, 한국산업인력공단
@@ -65,7 +75,9 @@ AI와 투자에 관심있는 학생입니다.
 - 한자자격시험 3급, 2011.03.24, 한자교육진흥회
 - TESET 1급(만료), 2019.11.17, 한국경제신문
 
+<br />
+
 ## 기타 활동
-- **금융빅데이터분석학회, 2021년 2월 - 2022년 7월**
+- **금융빅데이터분석학회 파인드알파, 2021년 2월 - 2022년 7월**
 - **동국대 금융투자동아리 RICH, 2018년 3월 - 2020년 12월**
 - **[서애로 서로돕기 프로젝트](https://www.lecturernews.com/news/articleView.html?idxno=43918), 2020년 6월- 2020년 9월**
