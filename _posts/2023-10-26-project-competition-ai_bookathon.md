@@ -8,7 +8,7 @@ comments: true
 
 ---
 
-2021년 11월, 부스트캠프를 통해 만난 팀원들과 제 3회 AI x Bookathon 대회에 참가하였습니다.
+2021년 11월, 부스트캠프를 통해 만난 팀원들과 제 3회 [제 3회 AI x Bookathon](https://news.unn.net/news/articleView.html?idxno=519446) 대회에 참가하였습니다.
 
 저의 역할은 모델 학습을 위한 데이터 수집 및 전처리였습니다. 5명의 팀원이 무박2일동안 한숨도 안자가면서 열중했습니다.
 
