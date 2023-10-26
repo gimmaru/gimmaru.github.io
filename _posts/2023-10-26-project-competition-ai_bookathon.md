@@ -59,7 +59,7 @@ comments: true
 <p>이 때 전체 주제인 ‘함께’ 를 결합하여 주제에 벗어나지 않는 텍스트 중에서만 유사도를 고려할 수 있게 하였습니다.</p>
 <p><img src="{{ site.baseurl }}/assets/img/image-20211118105258823.png" alt="Top-k Data Retrieval"></p>
 <p>이렇게 각각의 쿼리에 대하여 500개의 데이터 샘플들을 모을 수 있었습니다.</p>
-<h2 id="모델-선정-및-학습"><a href="#모델-선정-및-학습" class="headerlink" title="모델 선정 및 학습"></a>모델 선정 및 학습</h2><p>저희가 최종적으로 사용한 모델은 <a target="_blank" rel="external nofollow noopener noreferrer" href="https://huggingface.co/skt/ko-gpt-trinity-1.2B-v0.5">skt/ko-gpt-trinity-1.2B-v0.5</a> 입니다. 시중에 공개되어 있는 사전학습 생성모델 중 가장 많은 parameter 를 가지고 있으며, </p>
+<h2 id="모델-선정-및-학습"><a href="#모델-선정-및-학습" class="headerlink" title="모델 선정 및 학습"></a>모델 선정 및 학습</h2><p>저희가 최종적으로 사용한 모델은 <a target="_blank" rel="external nofollow noopener noreferrer" href="https://huggingface.co/skt/ko-gpt-trinity-1.2B-v0.5">skt/ko-gpt-trinity-1.2B-v0.5</a> 입니다. 당시 시중에 공개되어 있는 사전학습 생성모델 중 가장 많은 parameter 를 가지고 있으며, </p>
 <p><img src="{{ site.baseurl }}/assets/img/image-116.png" alt="gpt-3 parameters"></p>
 <p>GPT-3 논문에서 소개하듯이 Parameter 의 개수가 모델 성능으로 이어진다는 것에서 영감을 받아 최대한 큰 모델을 사용하고자 했습니다. </p>
 <p>또한 MindsLab 에서 제공해준 모델과의 benchmark 를 직접적으로 확인할 수가 없어서 pilot test를 정성적으로 진행했을 때 </p>
