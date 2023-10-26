@@ -1,8 +1,8 @@
 ---
 layout: tag-blog
-title: Project
+title: Competition
 slug: competition
-category: competition
+category: project
 menu: false
 order: 1
 header-img: "/img/bear.jpg"
