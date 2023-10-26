@@ -8,13 +8,13 @@ comments: true
 
 ---
 
-<p><img src="{{ site.baseurl }}/assets/img/stat_ai__award_ceremony.jpeg" alt="시상식"></p>
-
 2022년 5월, 통계청에서 주관한 [통계데이터 인공지능 활용대회](https://www.dailian.co.kr/news/view/1110435/?sc=Naver)에 개인으로 참가하여 최우수상(2위)을 수상하였습니다.
 
-<p><img src="{{ site.baseurl }}/assets/img/stat_ai__poster.jpeg" alt="대회 포스터"></p>
+<p><img src="{{ site.baseurl }}/assets/img/stat_ai__award_ceremony.jpeg" alt="시상식"></p>
 
 대회는 **자연어 기반 인공지능 산업분류 자동화**를 주제로 진행되었습니다. 특정 산업을 표현하는 20 ~ 30자 길이의 텍스트가 입력되었을 때 230개 산업 중 어떤 산업으로 분류할지 예측하는 텍스트 분류 문제를 다루었고, 100만 개의 학습용 데이터와 10만 개의 검증용 데이터가 주어졌습니다.
+
+<p><img src="{{ site.baseurl }}/assets/img/stat_ai__poster.jpeg" alt="대회 포스터"></p>
 
 당시 부스트캠프 AI Tech를 수료한 후 궁금했지만 시간 부족으로 제대로 공부하지 못하고 넘어간 부분을 채워가고 있었습니다.
 
