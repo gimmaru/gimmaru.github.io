@@ -58,7 +58,7 @@ AI와 투자에 관심있는 학생입니다.
 
 ## 수상내역
 ### **2022**
-- **[통계데이터 인공지능 활용대회](https://www.dailian.co.kr/news/view/1110435/?sc=Naver)**
+- **[통계데이터 인공지능 활용대회](/_posts/2023-10-26-project-competition-statistic_data_AI_competition)**
 
   통계청, 최우수상(2위, 개인 참여)
 
