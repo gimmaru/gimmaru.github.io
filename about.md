@@ -63,7 +63,7 @@ AI와 투자에 관심있는 학생입니다.
   통계청, 최우수상(2위, 개인 참여)
 
 ### **2021**
-- **[제 3회 AI x Bookathon](https://news.unn.net/news/articleView.html?idxno=519446)**
+- **[제 3회 AI x Bookathon](/_posts/2023-10-26-project-competition-ai_bookathon.md)**
 
   성균관대학교, 대상(1위)
 
@@ -92,4 +92,4 @@ AI와 투자에 관심있는 학생입니다.
 ## 기타 활동
 - **금융빅데이터분석학회 파인드알파, 2021년 2월 - 2022년 7월**
 - **동국대 금융투자동아리 RICH, 2018년 3월 - 2020년 12월**
-- **[서애로 서로돕기 프로젝트](https://www.lecturernews.com/news/articleView.html?idxno=43918), 2020년 6월- 2020년 9월**
+- **[서애로 서로돕기 프로젝트](https://www.lecturernews.com/news/articleView.html?idxno=43918), 2020년 6월 - 2020년 9월**
