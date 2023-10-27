@@ -7,7 +7,7 @@ order: 10
 
 <br />
 
-<img style="float: left;" src="{{ site.baseurl }}/assets/img/me_coffeebean.png" width="204.6" height="200">
+<img style="float: left;" src="{{ site.baseurl }}/assets/img/me_coffeebean.png" width="50%" height="50%">
 
 <br />
 
