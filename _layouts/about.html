@@ -4,20 +4,8 @@ layout: base
 
 {% assign author = site.data.authors[page.author] | default:site.data.authors.first[1] %}
 
-<article class="page" role="article">
-
-  <h1 class="page-title hr" style="padding-bottom:1rem">{{ page.title }}</h1>
-
-  <div class="author-body">
-
-  {% if author.picture_about %}
-    {% include srcset-img.html class="me" img=author.picture_about alt=author.name %}
-  {% endif %}
-    <!-- <div class="author-body-description">
-      {{ author.about | markdownify }}
-    </div> -->
-  </div>
-  <div class="markdown-body">
-    {{ content }}
-  </div>
-</article>
+{% if author.about %}
+  <aside class="author" role="complementary">
+    {% include author.html author=author heading='About' heading_tag='h2' %}
+  </aside>
+{% endif %}
