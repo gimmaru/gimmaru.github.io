@@ -57,15 +57,20 @@ comments: true
             self.config = config
 
             # 대분류 모델 불러오기
-            self.model_first = RobertaModel.from_pretrained(checkpoint["previous"],
-                                                            add_pooling_layer=False)
+            self.model_first = RobertaModel.from_pretrained(
+                checkpoint["previous"],
+                add_pooling_layer=False
+            )
+
             # 대분류 모델 프리징
             for param in self.model_first.parameters():
                 param.requires_grad_(False)
 
-            self.model = RobertaModel.from_pretrained(checkpoint["present"],
-                                                    config=config,
-                                                    add_pooling_layer=False)
+            self.model = RobertaModel.from_pretrained(
+                checkpoint["present"],
+                config=config,
+                add_pooling_layer=False
+            )
             self.norm = nn.LayerNorm(config.hidden_size)
             
             self.classifier = RobertaClassificationHead(config)
@@ -193,7 +198,7 @@ klue/roberta-base 모델과 klue/roberta-small 모델 각각에 대해 손실함
 
 대회 당시엔 생각하지 못했지만, Accuracy는 이산적이므로 미분이 불가능합니다. 그러므로 이론적으로는 역전파도 불가능합니다.
 
-역전파 과정에서 오류 발생하지 않은 이유는 파이토치 내부적으로 수치 미분을 수행하여 역전파를 수행하지 않고, 계산 그래프를 따라가며 역전파했기 때문으로 추측합니다.
+역전파 과정에서 오류가 발생하지 않은 이유는 파이토치 내부적으로 수치 미분을 수행하여 역전파를 수행하지 않고, 계산 그래프를 따라가며 역전파했기 때문으로 추측합니다.
 
 torch.sum은 흘러 들어온 그레디언트를 그대로 흘려보내기 때문에, predictions과 labels가 달랐던(틀린) prediction에 대해서만 그레디언트를 흘려보냅니다.
 
@@ -201,7 +206,7 @@ torch.sum은 흘러 들어온 그레디언트를 그대로 흘려보내기 때�
 
 ### 3. [TAPT](https://arxiv.org/pdf/2004.10964.pdf)(Task Adapted PreTraining)
 
-TAPT는 사전 학습된 모델을 불러와서 바로 원하는 테스크에 맞춰 파인튜닝하지 않고, 테스크 데이터셋에 대해 추가적인 사전 학습을 진행하는 방법을 말합니다.
+TAPT는 사전 학습된 모델을 불러와서 바로 원하는 테스크에 맞춰 파인튜닝하지 않고, 테스크 데이터셋으로 추가적인 사전 학습을 진행하는 방법을 말합니다.
 
 Encoder 모델을 활용했기에 허깅페이스에서 제공하는 Masked Language Modeling 학습 코드를 참고하여 TAPT를 진행하였습니다.
 
@@ -308,7 +313,7 @@ Encoder 모델을 활용했기에 허깅페이스에서 제공하는 Masked Lang
 
 klue/roberta-large 모델에 TAPT를 진행한 다음 파인튜닝한 결과, 검증 데이터셋에서 Accuracy 점수가 소폭 상승하였습니다.
 
-하이퍼 파라미터는 참고 논문 Appendix의 Table 13: Hyperparameters for domain- and task- adaptive pretraining 표에 제시된 것 그대로 적용하였습니다.
+하이퍼파라미터는 참고 논문 Appendix의 Table 13: Hyperparameters for domain- and task- adaptive pretraining 표에 제시된 것 그대로 적용하였습니다.
 
 ### 4. Negative Sampling
 Word2Vec 모델을 학습시킬 때 계산량을 줄이기 위해 Negative Sampling이라는 기법을 사용합니다. Skip-gram 방식으로 학습한다고 가정할 때, 전체 단어 집합 중에서 주변 단어들을 예측하는게 아니라 Positive sample인 실제 주변 단어가 주어지면 주변 단어라고 예측하고 Negative sample인 임의의 단어가 주어지면 해당 단어는 주변 단어가 아니라고 예측하는 이진 분류 문제로 바꾸어 모델을 학습시키는 방법이 Negative Sampling입니다.
@@ -356,7 +361,9 @@ Word2Vec 모델을 학습시킬 때 계산량을 줄이기 위해 Negative Sampl
             super().__init__()
             self.dense = nn.Linear(config.hidden_size, config.hidden_size)
             classifier_dropout = (
-                config.classifier_dropout if config.classifier_dropout is not None else config.hidden_dropout_prob
+                config.classifier_dropout 
+                if config.classifier_dropout is not None else 
+                config.hidden_dropout_prob
             )
             self.dropout = nn.Dropout(0.2)
             self.out_proj = nn.Linear(config.hidden_size, config.num_labels)
@@ -375,7 +382,9 @@ Word2Vec 모델을 학습시킬 때 계산량을 줄이기 위해 Negative Sampl
             self.num_labels = config.num_labels
             self.config = config
 
-            self.model = RobertaModel.from_pretrained(checkpoint, config=config, add_pooling_layer=False)
+            self.model = RobertaModel.from_pretrained(
+                checkpoint, config=config, add_pooling_layer=False
+            )
             self.norm = nn.LayerNorm(config.hidden_size)
 
             self.dropout = nn.Dropout(0.2)
