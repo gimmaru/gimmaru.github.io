@@ -36,7 +36,7 @@ comments: true
 <p>그렇게 전처리된 데이터의 예시는 아래와 같습니다.</p>
 <p><img src="{{ site.baseurl }}/assets/img/image-20211118101731561.png" alt="Data preprocessing"></p>
 <p><img src="{{ site.baseurl }}/assets/img/image-20211118101553443.png" alt="Data EDA"></p>
-<p>하지만 막상 수집한 데이터를 EDA 해보니 2만자 분량의 글을 생성해야 하는데 2만자를 초과하는 글이 하나도 없었습니다. 때문에 하나의 모델이 2만자를 한 번에 생성하고자 하면 분명이 내용적으로 많은 문제를 일으킬 것으로 예상했습니다. 따라서 저희가 모은 데이터를 효율적으로 활용하면서 적절한 글을 생성하기 위한 방법을 고민하게 되었습니다.</p>
+<p>하지만 막상 수집한 데이터를 EDA 해보니 2만자 분량의 글을 생성해야 하는데 2만자를 초과하는 글이 하나도 없었습니다. 때문에 하나의 모델이 2만자를 한 번에 생성하고자 하면 분명히 내용적으로 많은 문제를 일으킬 것으로 예상했습니다. 따라서 저희가 모은 데이터를 효율적으로 활용하면서 적절한 글을 생성하기 위한 방법을 고민하게 되었습니다.</p>
 <h2 id="주제-선정-및-Retrieval"><a href="#주제-선정-및-Retrieval" class="headerlink" title="주제 선정 및 Retrieval"></a>주제 선정 및 Retrieval</h2><p>한 대의 T4 GPU 에서 저희가 수집한 대량의 데이터를 학습시키고 하나의 주제가 관통하는 일관성있는 글을 쓰기엔 시간적으로, 그리고 하드웨어적으로 제약이 존재했습니다.</p>
 <p>비슷한 방식을 찾아보던 중, <a target="_blank" rel="external nofollow noopener noreferrer" href="https://arxiv.org/pdf/1704.00051v2.pdf">Open Domain Question Answering</a> 과 <a target="_blank" rel="external nofollow noopener noreferrer" href="https://arxiv.org/abs/2004.10964">Don’t Stop Pretraining: Adapt Language Models to Domains and Tasks</a> 논문을 보고 Retrieval 을 통해 어떠한 키워드 및 주제에 유사도가 높은 데이터만을 학습시키면 해당 주제에서 기가막히는 글을 생성해 낼 것이다는 아이디어를 떠올리게 되었습니다. 하나의 모델에서 한 번에 긴 글을 생성해내는 것보다는, 각각의 주제에 professional 한 작가모델을 여러 개 생성해내고 그 모델들로 생성해낸 결과를 조합하는 방식입니다. 이러한 방식으로 주제와 Prompt만 잘 선정한다면 Supervised 하게 저희가 쓰고자 하는 내용을 쉽게 유도할 수 있을 것이라고 생각하였으며 일관성 면에서도 하나의 모델을 사용하는 것보다 좋은 결과가 있을 것이란 예상을 하게 되었습니다.</p>
 <h3 id="주제-선정"><a href="#주제-선정" class="headerlink" title="주제 선정"></a>주제 선정</h3><p>주제에 대한 Retrieval 을 진행하기 위해서는 우선 저희가 쓰고자 하는 글의 주제를 선정할 필요가 있었습니다. 제 3회 AI x Bookathon 의 주제는 <code>함께</code> 였습니다. 해당 주제를 듣고 수많은 아이스 브레이킹을 하며 어떤 주제를 통해 글을 써내려가는 것이 좋을지에 대해 굉장히 많은 고민을 했습니다.</p>
@@ -59,7 +59,7 @@ comments: true
 <p>이 때 전체 주제인 ‘함께’ 를 결합하여 주제에 벗어나지 않는 텍스트 중에서만 유사도를 고려할 수 있게 하였습니다.</p>
 <p><img src="{{ site.baseurl }}/assets/img/image-20211118105258823.png" alt="Top-k Data Retrieval"></p>
 <p>이렇게 각각의 쿼리에 대하여 500개의 데이터 샘플들을 모을 수 있었습니다.</p>
-<h2 id="모델-선정-및-학습"><a href="#모델-선정-및-학습" class="headerlink" title="모델 선정 및 학습"></a>모델 선정 및 학습</h2><p>저희가 최종적으로 사용한 모델은 <a target="_blank" rel="external nofollow noopener noreferrer" href="https://huggingface.co/skt/ko-gpt-trinity-1.2B-v0.5">skt/ko-gpt-trinity-1.2B-v0.5</a> 입니다. 당시 시중에 공개되어 있는 사전학습 생성모델 중 가장 많은 parameter 를 가지고 있으며, </p>
+<h2 id="모델-선정-및-학습"><a href="#모델-선정-및-학습" class="headerlink" title="모델 선정 및 학습"></a>모델 선정 및 학습</h2><p>저희가 최종적으로 사용한 모델은 <a target="_blank" rel="external nofollow noopener noreferrer" href="https://huggingface.co/skt/ko-gpt-trinity-1.2B-v0.5">skt/ko-gpt-trinity-1.2B-v0.5</a> 입니다. 당시 시중에 공개되어 있는 사전학습 생성모델 중 가장 많은 parameter 를 가지고 있었으며, </p>
 <p><img src="{{ site.baseurl }}/assets/img/image-116.png" alt="gpt-3 parameters"></p>
 <p>GPT-3 논문에서 소개하듯이 Parameter 의 개수가 모델 성능으로 이어진다는 것에서 영감을 받아 최대한 큰 모델을 사용하고자 했습니다. </p>
 <p>또한 MindsLab 에서 제공해준 모델과의 benchmark 를 직접적으로 확인할 수가 없어서 pilot test를 정성적으로 진행했을 때 </p>
