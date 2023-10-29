@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "2022 통계데이터 인공지능 활용대회 최우수상 후기"
+title:  "통계데이터 인공지능 활용대회 최우수상 후기"
 subtitle:   "부제"
 categories: project
 tags: competition
