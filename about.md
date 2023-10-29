@@ -66,7 +66,7 @@ AI와 투자에 관심있는 학생입니다.
 ### **2023**
 - **[Improving Probability-based Prompt Selection Through Unified Evaluation and Analysis](https://arxiv.org/abs/2305.14877)**, *Preprint Under Review*
   
-  Sohee Yang, Jonghyeon Kim, Joel Jang, Seonghyeon Ye, Hyunji Lee, Minjoon Seo
+  Sohee Yang, **Jonghyeon Kim**, Joel Jang, Seonghyeon Ye, Hyunji Lee, Minjoon Seo
 
 <br />
 
