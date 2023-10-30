@@ -13,11 +13,11 @@ comments: true
 
 샤워를 하던 중 뜬금없이 '코사인 유사도 수식이 뭐였지?' 하는 생각이 들었다.
 
-기억 상 $$ v \cdot w \over{\lVert v \rVert \cdot \lVert w \rVert} $$ 로 
+기억 상 $$ v \cdot w \over{\lVert v \rVert \lVert w \rVert} $$ 로 
 
 내적을 통해 두 벡터의 유사도를 파악할 때 벡터 별 스케일 차이에 의한 판단의 어려움을
 
-$$ \lVert v \rVert \cdot \lVert w \rVert $$ 를 통해 제거해준 것으로 알고 있었다.
+$$ \lVert v \rVert \lVert w \rVert $$ 를 통해 제거해준 것으로 알고 있었다.
 
 이어서 피어슨 상관 계수와 수식이 매우 유사하다는 생각이 들었는데,
 
