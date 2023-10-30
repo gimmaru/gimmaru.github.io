@@ -8,6 +8,9 @@ comments: true
 
 ---
 
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
 샤워를 하던 중 뜬금없이 '코사인 유사도 수식이 뭐였지?' 하는 생각이 들었다.
 
 기억 상 $v \cdot w \over{\lVert v \rVert \cdot \lVert w \rVert}$ 로 
@@ -32,11 +35,8 @@ $\lVert v \rVert \cdot \lVert w \rVert$ 를 통해 제거해준 것으로 알고
 공분산 수식은 다음과 같다.
 $$ \frac{\sum_{i}^{n}\left(X_{i}-\bar{X}\right)\left(Y_{i}-\bar{Y}\right)}{n-1} $$
 
-<div style="text-align: center">
+([공분산](https://ko.wikipedia.org/wiki/%EA%B3%B5%EB%B6%84%EC%82%B0), 위키백과)
 
-[공분산](https://ko.wikipedia.org/wiki/%EA%B3%B5%EB%B6%84%EC%82%B0), 위키백과
-
-</div>
 <br>
 
 분자를 보면 $X$와 $Y$ 라는 변수가 있을 때, $X$의 각 원소와 $X$의 평균을 뺀 값과 $Y$의 각 원소와 $Y$의 평균을 뺀 값을 곱하는 것을 알 수 있다.
@@ -171,11 +171,9 @@ get_covariance(X, Y)
 <br>
 
 $$ \frac{\frac{\sum_{i}^{n}\left(X_{i}-\bar{X}\right)\left(Y_{i}-\bar{Y}\right)}{n-1}}{\sqrt{\frac{\sum_{i}^{n}\left(X_{i}-\bar{X}\right)^{2}}{n-1}} \sqrt{\frac{\sum_{i}^{n}\left(Y_{i}-\bar{Y}\right)^{2}}{n-1}}} = \frac{\sum_{i}^{n}\left(X_{i}-\bar{X}\right)\left(Y_{i}-\bar{Y}\right)}{\sqrt{\sum_{i}^{n}\left(X_{i}-\bar{X}\right)^{2}} \sqrt{\sum_{i}^{n}\left(Y_{i}-\bar{Y}\right)^{2}}} $$
-<div style="text-align: center">
 
-[피어슨 상관 계수](https://ko.wikipedia.org/wiki/%ED%94%BC%EC%96%B4%EC%8A%A8_%EC%83%81%EA%B4%80_%EA%B3%84%EC%88%98), 위키백과
+([피어슨 상관 계수](https://ko.wikipedia.org/wiki/%ED%94%BC%EC%96%B4%EC%8A%A8_%EC%83%81%EA%B4%80_%EA%B3%84%EC%88%98), 위키백과)
 
-</div>
 <br>
 
 두 변수의 공분산을 각각의 표준 편차의 곱으로 나눈 것으로 $X$ 와 $Y$ 변수의 분산이 1로 조정돼 스케일에 따른 효과가 사라진다.
@@ -225,11 +223,8 @@ print(f"피어슨 상관 계수: {get_pearson_correlation(X, Y):.4f} == {get_pea
 
 $$ \frac{A \cdot B}{\|A\|\|B\|}=\frac{\sum_{i=1}^{n} A_{i} \times B_{i}}{\sqrt{\sum_{i=1}^{n}\left(A_{i}\right)^{2}} \times \sqrt{\sum_{i=1}^{n}\left(B_{i}\right)^{2}}} $$
 
-<div style="text-align: center">
+([코사인 유사도](https://ko.wikipedia.org/wiki/%EC%BD%94%EC%82%AC%EC%9D%B8_%EC%9C%A0%EC%82%AC%EB%8F%84), 위키백과)
 
-[코사인 유사도](https://ko.wikipedia.org/wiki/%EC%BD%94%EC%82%AC%EC%9D%B8_%EC%9C%A0%EC%82%AC%EB%8F%84), 위키백과
-
-</div>
 <br>
 
 분자는 두 벡터의 내적이다. 앞서 공분산에서 확인한 것처럼, 두 벡터의 쌍($(a_1, b_1), (a_2, b_2), ... $)이 서로 양수거나 음수일 땐 값이 커지도록 유도되고, 두 벡터 쌍이 서로 다른 부호를 가질 땐 값이 작아지도록 유도된다.
