@@ -185,7 +185,11 @@ $$ {\sqrt{\frac{\sum_{i}^{n}\left(X_{i}-\bar{X}\right)^{2}}{n-1}}} = \sigma_X, {
 
 $$ \frac{\frac{\sum_{i}^{n}\left(X_{i}-\bar{X}\right)\left(Y_{i}-\bar{Y}\right)}{n-1}}{\sqrt{\frac{\sum_{i}^{n}\left(X_{i}-\bar{X}\right)^{2}}{n-1}} \sqrt{\frac{\sum_{i}^{n}\left(Y_{i}-\bar{Y}\right)^{2}}{n-1}}} $$ 
 
+<br>
+
 $$ = \frac{\frac{\sum_{i}^{n}\left(X_{i}-\bar{X}\right)\left(Y_{i}-\bar{Y}\right)}{n-1}}{\sigma_X \sigma_Y} $$
+
+<br>
 
 $$ = \frac{1}{n-1} \sum_{i}^{n}\frac{\left(X_{i}-\bar{X}\right)}{\sigma_X} \frac{\left(Y_{i}-\bar{Y}\right)}{\sigma_Y} $$
 
