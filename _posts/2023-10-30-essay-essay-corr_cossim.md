@@ -34,7 +34,7 @@ $$ \frac{\sum_{i}^{n}\left(X_{i}-\bar{X}\right)\left(Y_{i}-\bar{Y}\right)}{n-1} 
 
 <div style="text-align: center">
 
-([공분산](https://ko.wikipedia.org/wiki/%EA%B3%B5%EB%B6%84%EC%82%B0), 위키백과)
+[공분산](https://ko.wikipedia.org/wiki/%EA%B3%B5%EB%B6%84%EC%82%B0), 위키백과
 
 </div>
 <br>
@@ -173,7 +173,7 @@ get_covariance(X, Y)
 $$ \frac{\frac{\sum_{i}^{n}\left(X_{i}-\bar{X}\right)\left(Y_{i}-\bar{Y}\right)}{n-1}}{\sqrt{\frac{\sum_{i}^{n}\left(X_{i}-\bar{X}\right)^{2}}{n-1}} \sqrt{\frac{\sum_{i}^{n}\left(Y_{i}-\bar{Y}\right)^{2}}{n-1}}} = \frac{\sum_{i}^{n}\left(X_{i}-\bar{X}\right)\left(Y_{i}-\bar{Y}\right)}{\sqrt{\sum_{i}^{n}\left(X_{i}-\bar{X}\right)^{2}} \sqrt{\sum_{i}^{n}\left(Y_{i}-\bar{Y}\right)^{2}}} $$
 <div style="text-align: center">
 
-([피어슨 상관 계수](https://ko.wikipedia.org/wiki/%ED%94%BC%EC%96%B4%EC%8A%A8_%EC%83%81%EA%B4%80_%EA%B3%84%EC%88%98), 위키백과)
+[피어슨 상관 계수](https://ko.wikipedia.org/wiki/%ED%94%BC%EC%96%B4%EC%8A%A8_%EC%83%81%EA%B4%80_%EA%B3%84%EC%88%98), 위키백과
 
 </div>
 <br>
@@ -227,7 +227,7 @@ $$ \frac{A \cdot B}{\|A\|\|B\|}=\frac{\sum_{i=1}^{n} A_{i} \times B_{i}}{\sqrt{\
 
 <div style="text-align: center">
 
-([코사인 유사도](https://ko.wikipedia.org/wiki/%EC%BD%94%EC%82%AC%EC%9D%B8_%EC%9C%A0%EC%82%AC%EB%8F%84), 위키백과)
+[코사인 유사도](https://ko.wikipedia.org/wiki/%EC%BD%94%EC%82%AC%EC%9D%B8_%EC%9C%A0%EC%82%AC%EB%8F%84), 위키백과
 
 </div>
 <br>
