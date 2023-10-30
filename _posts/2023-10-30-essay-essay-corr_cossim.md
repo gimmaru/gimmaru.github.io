@@ -83,7 +83,7 @@ plt.show()
 
 
     
-![png](2023-10-30-essay-corr_cossim_files/2023-10-30-essay-corr_cossim_2_0.png)
+![png]({{ site.baseurl }}/assets/img/2023-10-30-essay-corr_cossim_2_0.png)
     
 
 
@@ -144,7 +144,7 @@ plt.show()
 
 
     
-![png](2023-10-30-essay-corr_cossim_files/2023-10-30-essay-corr_cossim_6_0.png)
+![png]({{ site.baseurl }}/assets/img/2023-10-30-essay-corr_cossim_6_0.png)
     
 
 
