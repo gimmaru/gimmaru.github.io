@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "피어슨 상관계수와 코사인 유사도의 관계"
+title:  "피어슨 상관 계수와 코사인 유사도의 관계"
 subtitle:   "부제"
 categories: essay
 tags: essay
@@ -42,7 +42,7 @@ $$ \frac{\sum_{i}^{n}\left(X_{i}-\bar{X}\right)\left(Y_{i}-\bar{Y}\right)}{n-1} 
 
 분자를 보면 $$X$$와 $$Y$$ 라는 변수가 있을 때, $$X$$의 각 원소와 $$X$$의 평균을 뺀 값과 $$Y$$의 각 원소와 $$Y$$의 평균을 뺀 값을 곱하는 것을 알 수 있다.
 
-$$X_{i}-\bar{X}$$, $$Y_{i}-\bar{Y}$$ 쌍이 서로 양의 값을 갖거나, 서로 음의 값을 같은 경우가 많을수록 결과는 큰 양수가 될 것이고
+$$X_{i}-\bar{X}$$, $$Y_{i}-\bar{Y}$$ 쌍이 서로 양의 값을 갖거나, 서로 음의 값을 갖는 경우가 많을수록 결과는 큰 양수가 될 것이고
 
 $$X_{i}-\bar{X}$$, $$Y_{i}-\bar{Y}$$ 쌍의 부호가 서로 다를 경우 음수가 더해지기 때문에 이런 경우 결과는 음수가 될 것이다.
 
@@ -165,11 +165,11 @@ get_covariance(X, Y)
 
 선형 관계의 강도는 동일하지만 공분산 결과는 1/100 만큼 차이가 난다.
 
-이처럼 공분산을 통해 선형 관계의 강도가 얼마나 강한지는 판단하기 어려운데, 이러한 공분산의 단점을 해소해주는 것이 피어슨 상관계수이다.
+이처럼 공분산을 통해 선형 관계의 강도가 얼마나 강한지는 판단하기 어려운데, 이러한 공분산의 단점을 해소해주는 것이 피어슨 상관 계수이다.
 
 <br>
 
-피어슨 상관계수 수식은 다음과 같다.
+피어슨 상관 계수 수식은 다음과 같다.
 
 $$ \frac{\frac{\sum_{i}^{n}\left(X_{i}-\bar{X}\right)\left(Y_{i}-\bar{Y}\right)}{n-1}}{\sqrt{\frac{\sum_{i}^{n}\left(X_{i}-\bar{X}\right)^{2}}{n-1}} \sqrt{\frac{\sum_{i}^{n}\left(Y_{i}-\bar{Y}\right)^{2}}{n-1}}} = \frac{\sum_{i}^{n}\left(X_{i}-\bar{X}\right)\left(Y_{i}-\bar{Y}\right)}{\sqrt{\sum_{i}^{n}\left(X_{i}-\bar{X}\right)^{2}} \sqrt{\sum_{i}^{n}\left(Y_{i}-\bar{Y}\right)^{2}}} $$
 
@@ -181,17 +181,17 @@ $$ \frac{\frac{\sum_{i}^{n}\left(X_{i}-\bar{X}\right)\left(Y_{i}-\bar{Y}\right)}
 
 수식으로 좀더 살펴보자.
 
-<br>
-
 $$ {\sqrt{\frac{\sum_{i}^{n}\left(X_{i}-\bar{X}\right)^{2}}{n-1}}} = \sigma_X, {\sqrt{\frac{\sum_{i}^{n}\left(Y_{i}-\bar{Y}\right)^{2}}{n-1}}} = \sigma_Y $$ 이면,
 
+$$ \frac{\frac{\sum_{i}^{n}\left(X_{i}-\bar{X}\right)\left(Y_{i}-\bar{Y}\right)}{n-1}}{\sqrt{\frac{\sum_{i}^{n}\left(X_{i}-\bar{X}\right)^{2}}{n-1}} \sqrt{\frac{\sum_{i}^{n}\left(Y_{i}-\bar{Y}\right)^{2}}{n-1}}} $$ 
+
+$$ = \frac{\frac{\sum_{i}^{n}\left(X_{i}-\bar{X}\right)\left(Y_{i}-\bar{Y}\right)}{n-1}}{\sigma_X \sigma_Y} $$
+
+$$ = \frac{1}{n-1} \sum_{i}^{n}\frac{\left(X_{i}-\bar{X}\right)}{\sigma_X} \frac{\left(Y_{i}-\bar{Y}\right)}{\sigma_Y} $$
+
 <br>
 
-$$ \frac{\frac{\sum_{i}^{n}\left(X_{i}-\bar{X}\right)\left(Y_{i}-\bar{Y}\right)}{n-1}}{\sqrt{\frac{\sum_{i}^{n}\left(X_{i}-\bar{X}\right)^{2}}{n-1}} \sqrt{\frac{\sum_{i}^{n}\left(Y_{i}-\bar{Y}\right)^{2}}{n-1}}} = \frac{\frac{\sum_{i}^{n}\left(X_{i}-\bar{X}\right)\left(Y_{i}-\bar{Y}\right)}{n-1}}{\sigma_X \sigma_Y} = \frac{1}{n-1} \sum_{i}^{n}\frac{\left(X_{i}-\bar{X}\right)}{\sigma_X} \frac{\left(Y_{i}-\bar{Y}\right)}{\sigma_Y}$$
-
-<br>
-
-위와 같이 각 변수에 대해 표준화하고 공분산을 계산한 것과 동일하기 때문에 피어슨 상관계수의 결과는 변수의 스케일에 상관없이 **-1 ~ 1** 사이 값을 갖게 된다.
+위와 같이 각 변수에 대해 표준화하고 공분산을 계산한 것과 동일하기 때문에 피어슨 상관 계수의 결과는 변수의 스케일에 상관없이 **-1 ~ 1** 사이 값을 갖게 된다.
 
 이렇듯 피어슨 상관 계수를 통해 공분산으로 불가능했던 두 변수 간 선형 관계의 강도를 비교할 수 있다.
 
