@@ -10,7 +10,7 @@ comments: true
 
 샤워를 하던 중 뜬금없이 '코사인 유사도 수식이 뭐였지?' 하는 생각이 들었다.
 
-기억 상 $$ v \cdot w \over{\lVert v \rVert \lVert w \rVert} $$ 로 
+기억 상 $$ v \cdot w \over{\lVert v \rVert \lVert w \rVert} $$ 로 (<button onClick="window.location.reload()">수식이 깨진다면 클릭</button>)
 
 내적을 통해 두 벡터의 유사도를 파악할 때 벡터 별 스케일 차이에 의한 판단의 어려움을
 
