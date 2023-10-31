@@ -10,9 +10,6 @@ comments: true
 
 샤워를 하던 중 뜬금없이 '코사인 유사도 수식이 뭐였지?' 하는 생각이 들었다.
 
-<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-
 기억 상 $$ v \cdot w \over{\lVert v \rVert \lVert w \rVert} $$ 로 
 
 내적을 통해 두 벡터의 유사도를 파악할 때 벡터 별 스케일 차이에 의한 판단의 어려움을
