@@ -7,11 +7,13 @@ GEM
       fast-stemmer (~> 1.0)
     colorator (1.1.0)
     concurrent-ruby (1.1.9)
+    duktape (2.7.0.0)
     em-websocket (0.5.3)
       eventmachine (>= 0.12.9)
       http_parser.rb (~> 0)
     eventmachine (1.2.7)
     eventmachine (1.2.7-x64-mingw32)
+    execjs (2.9.1)
     fast-stemmer (1.0.2)
     ffi (1.15.4)
     ffi (1.15.4-x64-mingw32)
@@ -43,8 +45,13 @@ GEM
       jekyll (>= 3.7, < 5.0)
     jekyll-watch (2.2.1)
       listen (~> 3.0)
+    katex (0.10.0)
+      execjs (~> 2.8)
     kramdown (2.3.1)
       rexml
+    kramdown-math-katex (1.0.1)
+      katex (~> 0.4)
+      kramdown (~> 2.0)
     kramdown-parser-gfm (1.1.0)
       kramdown (~> 2.0)
     liquid (4.0.3)
@@ -69,16 +76,19 @@ GEM
     webrick (1.7.0)
 
 PLATFORMS
+  arm64-darwin-22
   universal-darwin-21
   x64-mingw32
 
 DEPENDENCIES
   classifier-reborn
+  duktape
   jekyll (~> 3.4)
   jekyll-feed (~> 0.9)
   jekyll-paginate (~> 1.1)
   jekyll-redirect-from (~> 0.12)
   jekyll-sitemap (~> 1.0)
+  kramdown-math-katex
   kramdown-parser-gfm
   webrick (~> 1.7)
 
