@@ -95,7 +95,7 @@ plt.show()
 ```python
 def get_covariance(X, Y):
     assert X.ndim == 1 and Y.ndim == 1, "X and Y must have a 1dim"
-    assert len(X) == len(Y), "X and Y must be same the length"
+    assert len(X) == len(Y), "X and Y must be the same length"
     return ( ( X - X.mean() ) * ( Y - Y.mean() ) ).sum() / (len(X) - 1)
 
 get_covariance(X, Y)
@@ -202,7 +202,7 @@ $$ = \frac{1}{n-1} \sum_{i}^{n}\frac{\left(X_{i}-\bar{X}\right)}{\sigma_X} \frac
 ```python
 def get_pearson_correlation(X, Y):
     assert X.ndim == 1 and Y.ndim == 1, "X and Y must have a 1dim"
-    assert len(X) == len(Y), "X and Y must be same the length"
+    assert len(X) == len(Y), "X and Y must be the same length"
 
     sigma_x = np.sqrt( ( (X - X.mean()) ** 2 ).sum() / (len(X) - 1) )
     sigma_y = np.sqrt( ( (Y - Y.mean()) ** 2 ).sum() / (len(Y) - 1) )
@@ -260,9 +260,11 @@ print(f"평균(0) 조정, 코사인 유사도: {get_cossim(X - X.mean(), Y - Y.m
 
 벡터의 유사성을 확인하는 것과 변수 간 선형 관계를 파악하는 것 사이에 꽤나 공통점이 있는 것 같다.
 
-코사인 유사도를 앞서 피어슨 상관 계수를 확인한 산점도에 대입해서 생각해보면 
+앞서 공분산과 피어슨 상관 계수를 확인한 산점도를 떠올려보면
 
-변수 별 평균을 의미하는 점선을 원점으로 옮긴 후, 500 차원의 벡터 두 개의 유사도를 벡터 별 원소들의 선형 관계의 강도를 통해 알아보는 것으로 생각할 수 있을 것 같다.
+코사인 유사도를 통해 500 차원의 벡터 두 개의 유사도를 보는 것은
+
+벡터 별 평균을 의미하는 점선을 원점으로 옮긴 후, 각 벡터 원소들 사이 선형 관계의 강도를 통해 알아보는 것으로 생각할 수 있을 것 같다.
 
 두 변수의 선형 관계가 강하다면 직관적으로 유사도도 높을 것이라고 기대하게 되는 것처럼
 
