@@ -18,7 +18,6 @@ comments: true
 
 이 대회에서 저의 역할은 데이터를 활용하여 함께 고민한 비즈니스 문제를 효과적으로 풀 방법을 고민하고 구현하는 것이었습니다. 머신러닝 공부는 꾸준히 해왔지만 실제 데이터에 적용하고 활용해본 경험은 거의 없었기 때문에 데이터 기반으로 문제 해결 방안을 제시하기 쉽지 않았습니다. 그럼에도 불구하고 저를 믿고 분석을 맡겨준 팀원들에게 고마웠습니다.
 
-
 # Ideation
 
 당시 군산시는 현대중공업 조선소 가동 중단과 한국GM 군산공장 폐쇄로 지역 경제에 위기가 닥치자 2018년 고용위기지역으로 지정됐고 이후 2020년에 이어 2021년 12월까지 2차례 연장되었습니다.
@@ -31,7 +30,7 @@ comments: true
 
 한국관광 데이터랩을 통해 군산시 내국인 지출액(BC+신한)을 보면 펜데믹 발생 후 방역 대책이 시행되기 전과 비교했을 때 군산시 내국인 관광 총 소비액이 급감했다는 것을 알 수 있습니다. 2018년과 2019년 약 1400억 원을 초과하던 관광 총 소비액이 2020년 약 1000억 원으로 400억 원 이상 감소하였습니다. 2019년과 비교하여 2020년 관광 총 소비액은 감소율은 **30.4%** 입니다.
 
-<p><img src="{{ site.baseurl }}/assets/img/bigcontest_gunsan_visiter.jpeg" alt="군산시 방문자 수"></p>
+<p><img src="{{ site.baseurl }}/assets/img/bigcontest_gunsan_visiter.png" alt="군산시 방문자 수"></p>
 
 한국관광 데이터랩의 지역별 방문자 수를 보면 팬데믹으로 인해 방문자 수도 급감했다는 것을 알 수 있습니다. 2019년 2400만 명에 달하던 외부 관광객 수가 2020년 2150만명으로 줄었습니다. 2019년 대비 2020년 외부 방문자수 감소율은 **10.21%** 입니다.
 
@@ -103,7 +102,7 @@ comments: true
 
 워케이션은 일회성 관광에 그치지 않고, 주중에도 사람들이 지역에 머물게 효과를 가지는 체류형 관광입니다. 관광객의 체류 기간이 늘면서 지역 경제 활성화에도 효과적입니다. 또한, 워케이션을 선호하는 트렌드는 특정 지역에서만 보이는 현상이 아니므로 가까운 지역에 한정된 군산시의 관광객 커버리지도 넓히는 효과를 기대할 수 있습니다.
 
-<p><img src="{{ site.baseurl }}/assets/img/bigcontest_workation_gunsan_search.jpeg" alt="군산, 워케이션 연관어 분석"></p>
+<p><img src="{{ site.baseurl }}/assets/img/bigcontest_workation_gunsan_search.png" alt="군산, 워케이션 연관어 분석"></p>
 
 군산은 바다와 인접한 도시로 자연 경관이 빼어난 것으로 유명한 고군산군도를 보유하고 있습니다. 특히 고군산군도 가운데 즈음 위치한 [선유도](https://terms.naver.com/entry.naver?docId=3574831&cid=58924&categoryId=58933)는 '신선이 노니는 섬'으로 불리며 아름다운 해질녘 풍경을 자랑합니다.
 
@@ -111,7 +110,7 @@ comments: true
 
 이러듯 군산은 자연 경관과 볼거리 등 워케이션에 적합한 관광 인프라를 보유하고 있습니다. 하지만 일을 하기 위해 필요한 업무 인프라는 부족합니다.
 
-<p><img src="{{ site.baseurl }}/assets/img/bigcontest_share_office.jpeg" alt="군산시 공유 오피스 현황"></p>
+<p><img src="{{ site.baseurl }}/assets/img/bigcontest_share_office.png" alt="군산시 공유 오피스 현황"></p>
 
 23.11.03일을 기준으로 네이버 지도 검색을 통해 본 군산시에 위치한 공유 오피스는 단 2개에 불과합니다. 공모전을 준비하던 21년도에는 그린 망고 하나였습니다. 워케이션을 위해 업무 환경은 중요합니다. 노트북 하나만 있어도 업무를 할 수 있는 사람이라도 와이파이는 필수이며, 업무를 위해 필요한 시설이 갖춰져야만 합니다. 앞서 보았던 [워케이션 활용 국내관광 활성화 방안 연구용역 결과보고서](https://datalab.visitkorea.or.kr/site/portal/ex/bbs/View.do;ksessionid=ZXJpOVhTi_5TuTvpjkdjyPCZT8Ek_HptCV7hnA8v.wiws01?cbIdx=1129&bcIdx=299516&cateCont=tlt03&searchKey=&searchKey2=&tgtTypeCd=)에는 업무 인프라에 대한 사람들의 의견이 담겨 있습니다.
 
@@ -173,7 +172,7 @@ comments: true
 
 뉴스기사나 블로그, SNS 등에서 워케이션 관련 텍스트를 추출하고자 하였지만, 시간 부족과 크롤링 미숙으로 뉴스기사만 활용할 수 있었습니다. 그마저도 기사 하나하나를 직접 수집하였습니다. 1,012개의 신문 기사를 수집한 후 중복되거나 관련없는 기사를 모두 제거해보니 565개의 기사가 남았습니다.
 
-<p><img src="{{ site.baseurl }}/assets/img/bigcontest_workation_news_sample.jpeg" alt="워케이션 관련 뉴스 기사 예시"></p>
+<p><img src="{{ site.baseurl }}/assets/img/bigcontest_workation_news_sample.png" alt="워케이션 관련 뉴스 기사 예시"></p>
 
 워케이션 관련 주요 키워드가 무엇인지 확인하기 위해 워드클라우드 결과를 확인해보았습니다. 수집한 뉴스 텍스트를 Kiwi 형태소 분석기를 통해 토큰화한 후 고유 명사와 일반 명사만 활용하였습니다. 동사와 형용사를 포함시켰을 때 빈도수가 높은 단어는 '즐기', '지속', '높이' 등으로 해석에 큰 의미를 부여하기 어려웠고, 그 외 품사는 모두 포함시켰을 때 불용어를 제외하였음에도 '부터', '다는', '것' 과 같이 노이즈처럼 남아 활용하지 않았습니다.
 
@@ -181,7 +180,7 @@ comments: true
 
 Word2Vec은 '단어의 의미는 주변 단어에 의해 형성된다'는 분포 가설에 입각하여 단어 별 의미상 유사성을 측정할 수 있도록 도와주는 자연어 처리 기법입니다. 텍스트에 등장하는 단어를 벡터로 임베딩하는 과정에서 주변 단어의 분포가 유사한 단어들은 유사한 벡터가 되게끔 유도됩니다.
 
-<p><img src="{{ site.baseurl }}/assets/img/bigcontest_workation_wordcloud.jpeg" alt="워케이션 뉴스 기사 워드클라우드"></p>
+<p><img src="{{ site.baseurl }}/assets/img/bigcontest_workation_wordcloud.png" alt="워케이션 뉴스 기사 워드클라우드"></p>
 
 워드클라우드 결과를 확인해 보았을 때, 눈에 띄는 단어 하나는 '공간' 입니다. 해당 키워드가 어떤 맥락에서 등장한 것인지 판단하기 위해 뉴스 텍스트를 학습한 Word2Vec으로 유사한 단어를 확인해보았습니다.
 
@@ -298,7 +297,7 @@ model.wv.most_similar("힐링")
 
 '맛집' 특성은 대회 주최 측에서 제공해 준 식신 데이터를 참고하여 '식당 수 * 해당 식당의 검색량'을 지표로 활용하였습니다.
 
-<p><img src="{{ site.baseurl }}/assets/img/bigcontest_workation_raw_index.jpeg" alt="워케이션 위치 선정 지표"></p>
+<p><img src="{{ site.baseurl }}/assets/img/bigcontest_workation_raw_index.png" alt="워케이션 위치 선정 지표"></p>
 
 위 테이블은 공공데이터포털과 QGIS를 활용하여 위치 선정 인덱스를 구하기 위해 필요한 Raw 데이터 예시입니다. Raw 데이터의 특성을 조합하여 앞서 언급된 워케이션 입지 선정을 위한 6가지 특성을 추출하였습니다. 각 특성은 MinMaxScaler를 활용하여 0 ~ 1 사이로 스케일을 동일하게 조정해주었습니다.
 
@@ -369,7 +368,7 @@ weighted_features['total'] = weighted_features.sum(axis=1)
 weighted_features.sort_values(by='total', ascending=False).head()
 ```
 
-<p><img src="{{ site.baseurl }}/assets/img/bigcontest_workation_index.jpeg" alt="워케이션 입지 선정 인덱스"></p>
+<p><img src="{{ site.baseurl }}/assets/img/bigcontest_workation_index.png" alt="워케이션 입지 선정 인덱스"></p>
 
 ### 선정 결과 확인
 
@@ -377,13 +376,13 @@ weighted_features.sort_values(by='total', ascending=False).head()
 
 모든 빈집이 존재하는 것을 확인하고 입지 선정 인덱스를 적용해보았습니다.
 
-<p><img src="{{ site.baseurl }}/assets/img/bigcontest_workation_index_1050.jpeg" alt="워케이션 인덱스, 10, 50"></p>
+<p><img src="{{ site.baseurl }}/assets/img/bigcontest_workation_index_1050.png" alt="워케이션 인덱스, 10, 50"></p>
 
 워케이션 지수 상위 10개 빈집을 보면 자연환경과 가깝고 관광지, 편의시설, 맛집 등이 주로 분포 하는 지역이 우선시되고 있음을 확인할 수 있습니다.
 
 가중치가 높았던 자연환경 특성을 따라 확산하고 지수의 우선 순위에 맞춰 확산하는 모습입니다. 여행객들이 필요로 하는 요소들을 충족시키는 지역이 상위에 위치하고 있음을 확인하였습니다.
 
-<p><img src="{{ site.baseurl }}/assets/img/bigcontest_workation_index_90.jpeg" alt="워케이션 인덱스, 90"></p>
+<p><img src="{{ site.baseurl }}/assets/img/bigcontest_workation_index_90.png" alt="워케이션 인덱스, 90"></p>
 
 해당 결과를 바탕으로, 지수 순서대로 빈집이 확산되는 지역의 추이를 보며 어느 지역을 우선시 하여 워케이션 입지를 선정하면 좋을지 판단해 볼 수 있습니다.
 
@@ -393,7 +392,7 @@ weighted_features.sort_values(by='total', ascending=False).head()
 
 12개 빈집에 대해 워케이션 인덱스 기준 내림차순으로 나열한 결과 5개 빈집을 워케이션 입지로 최종 선정하였습니다.
 
-<p><img src="{{ site.baseurl }}/assets/img/bigcontest_final_house.jpeg" alt="워케이션 인덱스, 90"></p>
+<p><img src="{{ site.baseurl }}/assets/img/bigcontest_final_house.png" alt="워케이션 인덱스, 90"></p>
 
 다섯개의 빈집은 자연 환경과 어우러진 위치, 관광지 인접성 등 워케이션 주요 특성과 넓은 연면적을 만족합니다.
 
