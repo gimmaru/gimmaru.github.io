@@ -83,7 +83,7 @@ AI와 투자에 관심있는 학생입니다.
 
   성균관대학교, 대상(1위)
 
-- **[2021 빅콘테스트, 이노베이션 분야](http://www.ksmnews.co.kr/news/view.php?idx=361561)**
+- **[2021 빅콘테스트, 이노베이션 분야](/_posts/2023-11-04-project-competition-big_contest.md)**
 
   과학기술정보통신부 ・ 한국지능정보사회진흥원, 우수상
 
