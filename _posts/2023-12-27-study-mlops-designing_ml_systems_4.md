@@ -142,7 +142,7 @@ comments: true
 
 예를 들어, 의사가 *간호사 노트에 폐렴 같은 심각한 상태가 언급되면 해당 환자를 우선적으로 고려해야 한다*는 휴리스틱을 활용한다고 하면,
 
-```
+```python
 def labeling_func(note):
     if "페렴" in note:
         return "위급"
