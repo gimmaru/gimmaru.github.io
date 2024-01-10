@@ -40,7 +40,7 @@ comments: true
 
 스카우터 이미지는 [PNGWing](https://www.pngwing.com/ko/search?q=%EB%8B%A4%EC%9A%B4%EB%A1%9C%EB%93%9C)에서 다운로드받았다. 저작권 같은게 어떤지는 확인해보지 않았다(초안일 뿐 실제로 확정된 것이 아니므로).
 
-그러고 나서 PPT로 글자를 붙이고 [Pixel Me](https://pixel-me.tokyo/en/)라는 사이트에서 이미지를 도트 이미지로 변환했다. 그런데 글자를 인식하지 못하는 문제가 있었다.
+다음으로 PPT로 글자를 붙이고 [Pixel Me](https://pixel-me.tokyo/en/)라는 사이트에서 이미지를 도트 이미지로 변환했다. 그런데 글자를 인식하지 못하는 문제가 있었다.
 
 그래서 스카우터 이미지만 픽셀로 변환하고, 픽셀 폰트를 다운받은 후 스카우터 이미지와 결합했다. 다운로드 받은 픽셀 폰트는 [달무리](https://ranolp.github.io/dalmoori-font/)이다. 상업적 이용, 수정, 배포가 자유롭다.
 
