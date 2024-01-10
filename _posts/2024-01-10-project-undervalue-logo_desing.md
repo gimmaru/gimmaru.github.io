@@ -8,7 +8,7 @@ comments: true
 
 ---
 
-<div class="pull-left">
+<!-- <div class="pull-left">
 <img src="{{ site.baseurl }}/assets/img/2024-01-10-project-undervalue-stock_scouter.png" alt="Stock Scouter">
 <center><h4>1안</h4></center>
 </div>
@@ -16,7 +16,12 @@ comments: true
 <div class="pull-right">
 <img src="{{ site.baseurl }}/assets/img/2024-01-10-project-undervalue-undervalue_analyzer.png" alt="Undervaluation Analyzer">
 <center><h4>2안</h4></center>
-</div>
+</div> -->
+
+<!-- ![Stock Scouter]({{ site.baseurl }}/assets/img/2024-01-10-project-undervalue-stock_scouter.png) -->
+| <img src="{{ site.baseurl }}/assets/img/2024-01-10-project-undervalue-stock_scouter.png" alt="Stock Scouter"> | <img src="{{ site.baseurl }}/assets/img/2024-01-10-project-undervalue-undervalue_analyzer.png" alt="Undervaluation Analyzer"> |
+|:---:|:---:|
+|**1 안**|**2 안**|
 
 ## 갑자기 만들어진 배경
 
