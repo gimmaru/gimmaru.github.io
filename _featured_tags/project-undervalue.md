@@ -1,6 +1,6 @@
 ---
 layout: tag-blog
-title: Undervalue Analysis
+title: Undervaluation Analysis
 slug: undervalue
 category: project
 menu: false
