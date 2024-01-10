@@ -9,14 +9,12 @@ comments: true
 ---
 
 <div class="pull-left">
-<img src="../assets/img/2024-01-10-project-undervalue-stock_scouter.png" alt="Stock Scouter">
-</img>
+<img src="{{ site.baseurl }}/assets/img/2024-01-10-project-undervalue-stock_scouter.png" alt="Stock Scouter">
 <center><h4>1안</h4></center>
 </div>
 
 <div class="pull-right">
-<img src="../assets/img/2024-01-10-project-undervalue-undervalue_analyzer.png" alt="Undervaluation Analyzer">
-</img>
+<img src="{{ site.baseurl }}/assets/img/2024-01-10-project-undervalue-undervalue_analyzer.png" alt="Undervaluation Analyzer">
 <center><h4>2안</h4></center>
 </div>
 
@@ -34,7 +32,7 @@ comments: true
 
 첫번째 이미지는 다음 사진의 캐릭터 같은 느낌의 캐릭터가 돋보기를 들고 있는 이미지 위에 ‘저평가\n분석기’ 문구를 좌측 상단에 두는 것이었다.
 
-![Arale](../assets/img/2024-01-10-project-undervalue-arale.png)
+![Arale]({{ site.baseurl }}/assets/img/2024-01-10-project-undervalue-arale.png)
 
 하지만 돋보기를 든 아리(?), 아라레(?)와 비슷한 이미지를 찾기 어려웠다.
 
@@ -46,10 +44,10 @@ comments: true
 
 그래서 스카우터 이미지만 픽셀로 변환하고, 픽셀 폰트를 다운받은 후 스카우터 이미지와 결합했다. 다운로드 받은 픽셀 폰트는 [달무리](https://ranolp.github.io/dalmoori-font/)이다. 상업적 이용, 수정, 배포가 자유롭다.
 
-![Dalmoori Information](../assets/img/2024-01-10-project-undervalue-dalmoori_info.png)
+![Dalmoori Information]({{ site.baseurl }}/assets/img/2024-01-10-project-undervalue-dalmoori_info.png)
 
 ## 이름 고민
 
 처음에는 '주식 스카우터'가 아닌 '저평가 분석기'나 '마켓 스카우터'로 부르려고 했다. 그러나 투자를 처음 접하는 사람이라면 마켓, 저평가라는 단어가 와닿지 않을 것 같았다. 그래서 주식을 직접적으로 이름에 넣었다. 혹은 아래와 같이 마켓 스카우터를 이름으로 쓰되 주식을 명시하는 것도 하나의 방법일 것 같다.
 
-![Market Scouter](../assets/img/2024-01-10-project-undervalue-market_scouter.png)
+![Market Scouter]({{ site.baseurl }}/assets/img/2024-01-10-project-undervalue-market_scouter.png)
