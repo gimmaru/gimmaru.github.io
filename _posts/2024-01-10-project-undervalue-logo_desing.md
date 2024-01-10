@@ -8,18 +8,6 @@ comments: true
 
 ---
 
-<!-- <div class="pull-left">
-<img src="{{ site.baseurl }}/assets/img/2024-01-10-project-undervalue-stock_scouter.png" alt="Stock Scouter">
-<center><h4>1안</h4></center>
-</div>
-
-<div class="pull-right">
-<img src="{{ site.baseurl }}/assets/img/2024-01-10-project-undervalue-undervalue_analyzer.png" alt="Undervaluation Analyzer">
-<center><h4>2안</h4></center>
-</div> -->
-
-<!-- ![Stock Scouter]({{ site.baseurl }}/assets/img/2024-01-10-project-undervalue-stock_scouter.png) -->
-
 |**1 안**|**2 안**|
 |:---:|:---:|
 | <img src="{{ site.baseurl }}/assets/img/2024-01-10-project-undervalue-stock_scouter.png" alt="Stock Scouter"> | <img src="{{ site.baseurl }}/assets/img/2024-01-10-project-undervalue-undervalue_analyzer.png" alt="Undervaluation Analyzer"> |
@@ -57,3 +45,15 @@ comments: true
 처음에는 '주식 스카우터'가 아닌 '저평가 분석기'나 '마켓 스카우터'로 부르려고 했다. 그러나 투자를 처음 접하는 사람이라면 마켓, 저평가라는 단어가 와닿지 않을 것 같았다. 그래서 주식을 직접적으로 이름에 넣었다. 혹은 아래와 같이 마켓 스카우터를 이름으로 쓰되 주식을 명시하는 것도 하나의 방법일 것 같다.
 
 ![Market Scouter]({{ site.baseurl }}/assets/img/2024-01-10-project-undervalue-market_scouter.png)
+
+<!-- <div class="pull-left">
+<img src="{{ site.baseurl }}/assets/img/2024-01-10-project-undervalue-stock_scouter.png" alt="Stock Scouter">
+<center><h4>1안</h4></center>
+</div>
+
+<div class="pull-right">
+<img src="{{ site.baseurl }}/assets/img/2024-01-10-project-undervalue-undervalue_analyzer.png" alt="Undervaluation Analyzer">
+<center><h4>2안</h4></center>
+</div> -->
+
+<!-- ![Stock Scouter]({{ site.baseurl }}/assets/img/2024-01-10-project-undervalue-stock_scouter.png) -->
