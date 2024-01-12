@@ -70,7 +70,7 @@ Share는 시장점유율과,
 
 <details>
 <summary><h4>서장, 비즈니스 리서치 기법 익히기</h4></summary>
-<div>
+<div markdown="1">
 
 - 비즈니스 리서치란
     
@@ -96,7 +96,7 @@ Share는 시장점유율과,
 
 <details>
 <summary><h4>1장, 비즈니스 리서치의 기초 지식 알기</h4></summary>
-<div>
+<div markdown="1">
 
 **비즈니스 리서치에서 알아 두어야 할 4S**
 
@@ -223,7 +223,7 @@ Share는 시장점유율과,
 
 <details>
 <summary><h4>2장, 업계의 기본 구조 조사하기</h4></summary>
-<div>
+<div markdown="1">
 
 **초기 조사에 필요한 정보**
 
@@ -308,7 +308,7 @@ Share는 시장점유율과,
 
 <details>
 <summary><h4>3장, 시장 환경, 경쟁 환경 조사하기</h4></summary>
-<div>
+<div markdown="1">
 
 **경제 통계 조사하기**
 - 주요 정부 통계
@@ -400,7 +400,7 @@ Share는 시장점유율과,
 
 <details>
 <summary><h4>4장, 보충 정보를 입수하여 검증하기</h4></summary>
-<div>
+<div markdown="1">
 
 **취재 활동으로 조사 뒷받침하기**
     
@@ -509,7 +509,7 @@ Share는 시장점유율과,
 
 <details>
 <summary><h4>5장, 리서치 사례 연구</h4></summary>
-<div>
+<div markdown="1">
 
 **시장 규모 리서치 사례**
 - 업계 단체를 통해 조사하는 케이스
@@ -579,7 +579,7 @@ Share는 시장점유율과,
 
 <details>
 <summary><h4>6장, 리서치 결과를 정리하기</h4></summary>
-<div>
+<div markdown="1">
 
 **리서치의 성과를 높이기 위한 준비**
 - 평소의 자세
@@ -661,7 +661,7 @@ Share는 시장점유율과,
 
 <details>
 <summary><h4>7장, 수준을 더 높이기 위해</h4></summary>
-<div>
+<div markdown="1">
 
 **뉴스 지속적으로 읽기**
 
