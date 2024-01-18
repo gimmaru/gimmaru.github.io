@@ -378,7 +378,7 @@ CEO 인터뷰를 통해 기업의 전략과 앞으로의 방향성을 확인할 
 
 <table>
     <tr>
-        <th scope="col"> </td>
+        <th scope="col"><center>・</center></td>
         <th scope="col"><center>베이직 플랜</center></td>
         <th scope="col"><center>프리미엄 플랜</center></td>
     </tr>
