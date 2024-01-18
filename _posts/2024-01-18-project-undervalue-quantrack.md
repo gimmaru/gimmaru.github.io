@@ -44,11 +44,11 @@ comments: true
 
 방대한 주식 관련 데이터를 정량 분석한 결과로 상장 기업의 가치를 추산하고, 이를 인공지능 분석해 알맞은 투자 방법을 알려주는 ‘퀀트 투자’ 서비스의 일종이다.
 
-<img src="{{ site.baseurl }}/assets/img/2024-01-18-project-undervalue-quantrack_financial_report.jpeg" width="225" height="400" alt="퀀트랙 AI 종목진단">
+<img src="{{ site.baseurl }}/assets/img/2024-01-18-project-undervalue-quantrack_financial_report.jpeg" width="210" height="400" alt="퀀트랙 AI 종목진단">
 
 스마트폰에 퀀트랙을 설치하고 아이콘만 몇 번 누르면, 미국과 우리나라의 주요 가치주들을 찾아 제시한다. 이들 가치주의 주식 거래 흐름과 차트, 성과와 전망, 시장 환경 분석 결과도 보여준다. 여기에 소비자의 투자 성향을 입력하면 종목 100~300개를 모아 개인 맞춤형 ETF(Exchange Traded Fund, 상장지수펀드)를 내놓는다. 일반 주식 투자자는 이 정보를 토대로 투자 여부를 판단하고 실행하면 된다.
 
-<img src="{{ site.baseurl }}/assets/img/2024-01-18-project-undervalue-quantrack_reasonable_price.jpeg" width="225" height="400" alt="퀀트랙 적정주가">
+<img src="{{ site.baseurl }}/assets/img/2024-01-18-project-undervalue-quantrack_reasonable_price.jpeg" width="210" height="400" alt="퀀트랙 적정주가">
 
 상장기업의 재무제표를 동종업계 기업들과 비교 분석해 **상승 여력** 정보를 제공하여 초보 투자자의 접근성을 높였다. 상승 여력은 퀀트랙 자체 기술로 예측한 적정 주가와 현재가의 차이를 통해 주가가 얼마나 상승할 수 있을지를 계산한 값이다.
 
