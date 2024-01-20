@@ -119,7 +119,7 @@ comments: true
 |<img src="{{ site.baseurl }}/assets/img/2024-01-21-project-undervalue-simple_examples_calcul_comment1.jpeg" alt="물타기계산기 후기1">|<img src="{{ site.baseurl }}/assets/img/2024-01-21-project-undervalue-simple_examples_calcul_comment2.jpeg" alt="물타기계산기 후기2">|
 |<img src="{{ site.baseurl }}/assets/img/2024-01-21-project-undervalue-simple_examples_calcul_comment3.jpeg" alt="물타기계산기 후기3">||
 
-### 든 생각
+### 마무리
 
 두 앱 모두 매우 단순하면서도 사람들이 필요로 하는, 유용하다고 느끼는 부분을 잘 담은 앱이다.
 
