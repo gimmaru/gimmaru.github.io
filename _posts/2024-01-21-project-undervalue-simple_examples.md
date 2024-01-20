@@ -127,13 +127,13 @@ comments: true
 
 물타기 계산기의 기능도 작게 끼워서 제공해도 좋겠다는 생각도 했다.
 
-관련주식검색기를 만든 사람의 다른 앱을 보니 '공인중개사요약집'이다. 후기를 보니 평가가 좋다. 공인중개사를 준비하는 사람들은 유용하게 활용하고 있는 것 같다. 나도 간단하면서 사람들에게 유용한 앱을 빠르게 만들어보고 싶어졌다. 여러 개 시도해보고 한 두개라도 사람들이 많이 써주면 나도 좋고 세상에도 좋은 것 아닐까,, 😙
+관련주식검색기를 만든 사람의 다른 앱을 보니 '공인중개사요약집'이다. 후기를 보니 평가가 좋다. 공인중개사를 준비하는 사람들은 유용하게 활용하고 있는 것 같다. 나도 간단하면서 사람들에게 유용한 앱을 빠르게 만들어보고 싶어졌다. 여러 개 시도해보고 한 두개라도 사람들이 많이 써주면 나도 좋고 세상에도 좋은 것 아닐까,, ㅎㅎ
 
 ### 참고 자료
 
 |소스                       |링크                                                                                                                                                              |일자  |
 |:-------------------------:|:----------------------------------------------------------------------------------------------------------------------------------------------------------------:|:----:|
-|Youtube                    |[주식투자자라면 꼭 써야 하는 필수 어플 ✔특히 바쁜 직장인 투자자에게 꼭 필요한 어플👍](https://www.youtube.com/watch?v=5yRQoP5GsPU&t=350s)                         |220430|
+|Youtube                    |[주식투자자라면 꼭 써야 하는 필수 어플 ✔특히 바쁜 직장인 투자자에게 꼭 필요한 어플](https://www.youtube.com/watch?v=5yRQoP5GsPU&t=350s)                         |220430|
 |뉴스웍스                   |[개인 투자자 성공 이끈다... ‘관련주식검색기’ 어플 화제](https://www.newsworks.co.kr/news/articleView.html?idxno=165749)                                           |180205|
 |한경BUSINESS               |[증권사 MTS ‘물타기’ 기능 호평…“불타기도 만들어줘요”](https://www.newsworks.co.kr/news/articleView.html?idxno=165749)                                             |240116|
 |네이버 카페                |[하락장이 끝나면 주식 평단가 계산기로 물타기 준비하세요(ft.신한알파)](https://cafe.naver.com/somenickname/69901?art=ZXh0ZXJuYWwtc2VydmljZS1uYXZlci1zZWFyY2gtaW50ZW50LXZpZXc=.eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjYWZlVHlwZSI6IkNBRkVfVVJMIiwiY2FmZVVybCI6InNvbWVuaWNrbmFtZSIsImFydGljbGVJZCI6Njk5MDEsImlzc3VlZEF0IjoxNzA1NzY5NjIxNTY5fQ.W2EFYFuDFkgAeWHLGts32KdUadp0ql9hbOoU9cT6bW0)                                             |231012|
