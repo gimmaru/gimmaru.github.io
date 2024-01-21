@@ -202,4 +202,3 @@
   greeting:
     name: bear
     icon: asset/img/bear.png
-    prepend: "https://gimmaru.github.io/about/"

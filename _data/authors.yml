@@ -66,6 +66,7 @@ isme2n:
     # paypal:          <username>
     email:           mailto:john8778@naver.com
     rss:             https://gimmaru.github.io/feed.xml
+    greeting:        https://gimmaru.github.io/about/
 
 # Another author
 mdo:
