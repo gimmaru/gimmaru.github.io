@@ -2,7 +2,7 @@
 #  User configuration
 # -----------------------------------------------------------------------------
 
-title:               김마루 전망대
+title:               ⛰️ 김마루 전망대 <img src="/assets/img/telescope.png" alt="hi bear">
 
 # The unique resource location of your page.
 # Set to `https://<username>.github.io` when hosting on GitHub Pages
@@ -18,7 +18,7 @@ tagline:             ""
 # A short description of the page, used in the sidebar and as fallback for the meta description tag.
 # Markdown enabled, but don't use more than one paragraph (enforced by `>`)
 description:         >
-  기록을 둘러보는 곳에 오셔서 반갑습니다 ![hi bear](/assets/img/bear.png) <img src="/assets/img/bear.png" alt="hi bear">
+  기록을 둘러보는 곳에 오셔서 반갑습니다 <img src="/assets/img/bear.png" alt="hi bear" width="50" height="50">
 
 # This should be the same author as first entry in `_data/authors.yml`
 author:
