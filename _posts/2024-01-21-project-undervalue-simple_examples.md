@@ -12,7 +12,7 @@ comments: true
 
 ## 관련주식검색기
 
-관련주식검색기는 [유튜브 영상](https://www.youtube.com/watch?v=5yRQoP5GsPU&t=350s)에서 처음 알게 되었다. 특정 테마나 업종을 검색하면 그에 속하는 상장 기업 목록을 전달해준다. 현재 시장의 관심을 받는 인기 테마에 속하는 기업이 궁금할 때 직접 찾아볼 필요 없이, 관련주식검색기 하나만으로 쉽게 확인할 수 있다. 검색 후 확인된 종목을 누르면(클릭하면) 포털에 자동으로 검색되도록 해 관련뉴스나 상세 정보를 손쉽게 찾아 볼 수 있도록 돕는다.
+관련주식검색기는 [유튜브 영상](https://www.youtube.com/watch?v=5yRQoP5GsPU&t=350s)에서 처음 알게 되었다. 특정 테마나 업종을 검색하면 그에 속하는 상장 기업 목록을 전달해준다. 시장의 관심을 받는 인기 테마에 속하는 기업이 궁금할 때 직접 찾아볼 필요 없이, 관련주식검색기 하나만으로 쉽게 확인할 수 있다. 검색 후 확인된 종목을 누르면 포털에 자동으로 검색되도록 해 관련 뉴스나 상세 정보를 손쉽게 찾아 볼 수 있도록 돕는다.
 
 ㈜피앤케이 씨오에서 개발하였다. [뉴스웍스 기사](https://www.newsworks.co.kr/news/articleView.html?idxno=165749)에 따르면 피앤케이 씨오 박석준 대표는 “주식 전문가들로 구성된 기관 등에 비해 정보 수집에 취약할 수밖에 없는 개인 투자자들은 변화에 능동적으로 대처하기 어려운 것이 현실”이라며 “이 어플은 상승장에서도 별다른 수익을 거두지 못하고 소외되는 개인 투자자들의 소중한 자산을 지키는 데 도움을 줄 수 있을 것”이라고 전했다고 한다.
 
@@ -106,7 +106,7 @@ comments: true
 
 ## 물타는 계산기
 
-투자를 하다보면 보유한 주식의 가격이 하락하는 일은 흔하다. 매수 시점보다 주가가 떨어진 기업의 주가가 추후 상승할 것으로 기대한다면 할인된 가격으로 추가 매수할 수 있는 기회라고 판단할 것이다. 떨어진 가격으로 주식을 추가 매수해 평단가를 낮추는 행위는 흔해서 '물타기'라는 별칭도 붙었다. 물타기 이후 가격이 얼마나 될지 계산에 도움이 주는 것이 물타는 계산기다. 사람들은 물타기 전 매수 주식 평균 단가가 얼마인지를 가늠하면서 물탈지 말지 판단하는데 물타기 계산기는 이때 도움이 된다. '물타는 계산기', '평단가 계산기'로 플레이스토어에 검색해보면 여러 앱이 존재하고 있음을 알 수 있고, 최근엔 증권사 MTS에서도 물타기 계산 기능을 제공해주고 있다([증권사 MTS ‘물타기’ 기능 호평…“불타기도 만들어줘요”](https://www.newsworks.co.kr/news/articleView.html?idxno=165749), [하락장이 끝나면 주식 평단가 계산기로 물타기 준비하세요(ft.신한알파)](https://cafe.naver.com/somenickname/69901?art=ZXh0ZXJuYWwtc2VydmljZS1uYXZlci1zZWFyY2gtaW50ZW50LXZpZXc=.eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjYWZlVHlwZSI6IkNBRkVfVVJMIiwiY2FmZVVybCI6InNvbWVuaWNrbmFtZSIsImFydGljbGVJZCI6Njk5MDEsImlzc3VlZEF0IjoxNzA1NzY5NjIxNTY5fQ.W2EFYFuDFkgAeWHLGts32KdUadp0ql9hbOoU9cT6bW0)).
+투자를 하다보면 보유한 주식의 가격이 하락하는 일은 흔하다. 매수 시점보다 주가가 떨어진 기업의 주가가 추후 상승할 것으로 기대한다면 할인된 가격으로 추가 매수할 수 있는 기회라고 판단할 것이다. 떨어진 가격으로 주식을 추가 매수해 평단가를 낮추는 행위는 흔해서 '물타기'라는 별칭도 붙었다. 물타기 이후 가격이 얼마나 될지 계산에 도움이 주는 것이 물타는 계산기다. 사람들은 물타기 전 매수 주식 평균 단가가 얼마인지 가늠하면서 물탈지 말지 판단하는데, 물타기 계산기는 이때 도움이 된다. '물타는 계산기', '평단가 계산기'로 플레이스토어에 검색해보면 여러 앱이 존재하고 있음을 알 수 있고, 최근엔 증권사 MTS에서도 물타기 계산 기능을 제공해주고 있다([증권사 MTS ‘물타기’ 기능 호평…“불타기도 만들어줘요”](https://www.newsworks.co.kr/news/articleView.html?idxno=165749), [하락장이 끝나면 주식 평단가 계산기로 물타기 준비하세요(ft.신한알파)](https://cafe.naver.com/somenickname/69901?art=ZXh0ZXJuYWwtc2VydmljZS1uYXZlci1zZWFyY2gtaW50ZW50LXZpZXc=.eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjYWZlVHlwZSI6IkNBRkVfVVJMIiwiY2FmZVVybCI6InNvbWVuaWNrbmFtZSIsImFydGljbGVJZCI6Njk5MDEsImlzc3VlZEF0IjoxNzA1NzY5NjIxNTY5fQ.W2EFYFuDFkgAeWHLGts32KdUadp0ql9hbOoU9cT6bW0)).
 
 ### 기능
 
@@ -123,7 +123,7 @@ comments: true
 
 ## 마무리
 
-두 앱 모두 매우 단순하면서도 사람들이 필요로 하는, 유용하다고 느끼는 부분을 잘 담은 앱이다.
+두 앱 모두 매우 단순하면서도 사람들이 필요로 하는 부분을 잘 담은 앱이다.
 
 관련주식검색기를 보면서 어떻게 관련 테마를 싹 정리했는지 궁금했다. 현재 기준 한국 코스피와 코스닥 상장 기업 수가 2,300여개라고 하니 시간을 쏟는다면 상장 기업 별로 산업과 테마를 정리해서 저장하는 것도 가능할 것 같다. 저평가 분석기를 우선 한국 상장 기업으로 한정하고 만들 예정인 만큼 부지런히 작업해서 기업 별 업종 및 업종 별 특성을 고려한 가치 평가 기능도 제공하고 싶다.
 
