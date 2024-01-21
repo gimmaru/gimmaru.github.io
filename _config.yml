@@ -18,7 +18,7 @@ tagline:             ""
 # A short description of the page, used in the sidebar and as fallback for the meta description tag.
 # Markdown enabled, but don't use more than one paragraph (enforced by `>`)
 description:         >
-  생각을 적기 위한 블로그
+  기록을 둘러보는 곳에 오셔서 반갑습니다 ![hi bear](/assets/img/bear.png) <img src="/assets/img/bear.png" alt="hi bear">
 
 # This should be the same author as first entry in `_data/authors.yml`
 author:
