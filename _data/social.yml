@@ -199,3 +199,7 @@
     name: PayPal
     icon: icon-paypal
     prepend: "https://www.paypal.me/"
+  greeting:
+    name: bear
+    icon: asset/img/bear.png
+    prepend: "https://gimmaru.github.io/about/"
