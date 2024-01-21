@@ -11,14 +11,14 @@ isme2n:
     AI와 투자에 관심있는 학생
 
   # This photo will be used in the about section
-  picture:
+  picture_about:
     src:             /assets/img/telescope.png
     # srcset is optional, but can be used to provide higher res versions for retina displays
     srcset:
       1x:            /assets/img/telescope.png
       2x:            /assets/img/telescope.png
   
-  picture_about:
+  picture:
     src:             /assets/img/bear.png
     # srcset is optional, but can be used to provide higher res versions for retina displays
     srcset:
