@@ -18,7 +18,7 @@ tagline:             ""
 # A short description of the page, used in the sidebar and as fallback for the meta description tag.
 # Markdown enabled, but don't use more than one paragraph (enforced by `>`)
 description:         >
-  기록을 둘러보는 곳 🔭<br>나를 둘러보거나<br>세상을 둘러보며<br>미래를 전망할때<br>기록이 도움 되었으면 한다.
+  기록을 둘러보는 곳 🔭<br>나를 둘러보거나<br>세상을 둘러보거나<br>미래를 전망할 때<br>기록이 도움 되었으면 한다.
 
 # This should be the same author as first entry in `_data/authors.yml`
 author:
