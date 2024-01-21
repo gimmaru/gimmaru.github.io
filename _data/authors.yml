@@ -15,8 +15,8 @@ isme2n:
     src:             /assets/img/telescope2.png
     # srcset is optional, but can be used to provide higher res versions for retina displays
     srcset:
-      1x:            /assets/img/telescope1.png
-      2x:            /assets/img/telescope1.png
+      1x:            "572"
+      2x:            "572"
   
   picture_about:
     src:             /assets/img/bear.png
