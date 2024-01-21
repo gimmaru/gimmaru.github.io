@@ -68,7 +68,7 @@ comments: true
 |<img src="{{ site.baseurl }}/assets/img/2024-01-21-project-undervalue-simple_examples_search_comment3.jpeg" alt="관련주식검색기 후기3">|<img src="{{ site.baseurl }}/assets/img/2024-01-21-project-undervalue-simple_examples_search_comment4.jpeg" alt="관련주식검색기 후기4">|
 |<img src="{{ site.baseurl }}/assets/img/2024-01-21-project-undervalue-simple_examples_search_comment5.jpeg" alt="관련주식검색기 후기5">|<img src="{{ site.baseurl }}/assets/img/2024-01-21-project-undervalue-simple_examples_search_comment6.jpeg" alt="관련주식검색기 후기6">|
 
-- 긍정 후기
+- **긍정 후기**
 
     테마 관련 종목을 바로 볼 수 있는게 좋다.
 
@@ -82,7 +82,7 @@ comments: true
 
     다른 어플 필요없을 정도로 유용하다.
 
-- 부정 후기
+- **부정 후기**
 
     푸시 알림이 작은게 아쉽다.
 
@@ -127,7 +127,7 @@ comments: true
 
 관련주식검색기를 보면서 어떻게 관련 테마를 싹 정리했는지 궁금했다. 현재 기준 한국 코스피와 코스닥 상장 기업 수가 2,300여개라고 하니 시간을 쏟는다면 상장 기업 별로 산업과 테마를 정리해서 저장하는 것도 가능할 것 같다. 저평가 분석기를 우선 한국 상장 기업으로 한정하고 만들 예정인 만큼 부지런히 작업해서 기업 별 업종 및 업종 별 특성을 고려한 가치 평가 기능도 제공하고 싶다.
 
-물타기 계산기의 기능도 작게 끼워서 제공해도 좋겠다는 생각도 했다.
+물타기 계산기의 기능도 작게 끼워서 제공해도 좋겠다.
 
 관련주식검색기를 만든 사람의 다른 앱을 보니 '공인중개사요약집'이다. 후기를 보니 평가가 좋다. 공인중개사를 준비하는 사람들은 유용하게 활용하고 있는 것 같다. 나도 간단하면서 사람들에게 유용한 앱을 빠르게 만들어보고 싶어졌다. 여러 개 시도해보고 한 두개라도 사람들이 많이 써주면 나도 좋고 세상에도 좋은 것 아닐까,, 😙
 
