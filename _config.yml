@@ -18,7 +18,7 @@ tagline:             ""
 # A short description of the page, used in the sidebar and as fallback for the meta description tag.
 # Markdown enabled, but don't use more than one paragraph (enforced by `>`)
 description:         >
-  기록을 둘러보는 곳<br>나를 둘러보거나<br>세상을 둘러보며<br>앞으로를 전망하는데<br>기록이 도움이 되었으면 한다.
+  기록을 둘러보는 곳 🔭<br>나를 둘러보거나<br>세상을 둘러보며<br>미래를 전망할때<br>기록이 도움 되었으면 한다.
 
 # This should be the same author as first entry in `_data/authors.yml`
 author:
@@ -26,7 +26,7 @@ author:
   email:             john8778@naver.com
 
 # Fallback image and color
-image:               /assets/img/hill.jpeg
+image:               /assets/img/hill_night02.png
 color:               '#4f86aa'
 
 # The font used for headings. Expects a string that is a valid CSS font-family value.
