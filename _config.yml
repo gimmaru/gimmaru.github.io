@@ -26,7 +26,7 @@ author:
   email:             john8778@naver.com
 
 # Fallback image and color
-image:               /assets/img/night_view_newyork.jpeg
+image:               /assets/img/hill.jpeg
 color:               '#4f86aa'
 
 # The font used for headings. Expects a string that is a valid CSS font-family value.
