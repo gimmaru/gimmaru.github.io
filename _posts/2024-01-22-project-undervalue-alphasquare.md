@@ -139,11 +139,11 @@ comments: true
 
 |후기 목록 1|후기 목록 2|
 |:---------:|:---------:|
-|<img src="{{ site.baseurl }}/assets/img/2024-01-21-project-undervalue-alphasquare_comment1.jpeg" alt="알파스퀘어 후기1">|<img src="{{ site.baseurl }}/assets/img/2024-01-21-project-undervalue-alphasquare_comment2.jpeg" alt="알파스퀘어 후기2">|
-|<img src="{{ site.baseurl }}/assets/img/2024-01-21-project-undervalue-alphasquare_comment3.jpeg" alt="알파스퀘어 후기3">|<img src="{{ site.baseurl }}/assets/img/2024-01-21-project-undervalue-alphasquare_comment4.jpeg" alt="알파스퀘어 후기4">|
-|<img src="{{ site.baseurl }}/assets/img/2024-01-21-project-undervalue-alphasquare_comment5.jpeg" alt="알파스퀘어 후기5">|<img src="{{ site.baseurl }}/assets/img/2024-01-21-project-undervalue-alphasquare_comment6.jpeg" alt="알파스퀘어 후기6">|
-|<img src="{{ site.baseurl }}/assets/img/2024-01-21-project-undervalue-alphasquare_comment7.jpeg" alt="알파스퀘어 후기7">|<img src="{{ site.baseurl }}/assets/img/2024-01-21-project-undervalue-alphasquare_comment8.jpeg" alt="알파스퀘어 후기8">|
-|<img src="{{ site.baseurl }}/assets/img/2024-01-21-project-undervalue-alphasquare_comment9.jpeg" alt="알파스퀘어 후기9">|<img src="{{ site.baseurl }}/assets/img/2024-01-21-project-undervalue-alphasquare_comment10.jpeg" alt="알파스퀘어 후기10">|
+|<img src="{{ site.baseurl }}/assets/img/2024-01-22-project-undervalue-alphasquare_comment1.jpeg" alt="알파스퀘어 후기1">|<img src="{{ site.baseurl }}/assets/img/2024-01-22-project-undervalue-alphasquare_comment2.jpeg" alt="알파스퀘어 후기2">|
+|<img src="{{ site.baseurl }}/assets/img/2024-01-22-project-undervalue-alphasquare_comment3.jpeg" alt="알파스퀘어 후기3">|<img src="{{ site.baseurl }}/assets/img/2024-01-22-project-undervalue-alphasquare_comment4.jpeg" alt="알파스퀘어 후기4">|
+|<img src="{{ site.baseurl }}/assets/img/2024-01-22-project-undervalue-alphasquare_comment5.jpeg" alt="알파스퀘어 후기5">|<img src="{{ site.baseurl }}/assets/img/2024-01-22-project-undervalue-alphasquare_comment6.jpeg" alt="알파스퀘어 후기6">|
+|<img src="{{ site.baseurl }}/assets/img/2024-01-22-project-undervalue-alphasquare_comment7.jpeg" alt="알파스퀘어 후기7">|<img src="{{ site.baseurl }}/assets/img/2024-01-22-project-undervalue-alphasquare_comment8.jpeg" alt="알파스퀘어 후기8">|
+|<img src="{{ site.baseurl }}/assets/img/2024-01-22-project-undervalue-alphasquare_comment9.jpeg" alt="알파스퀘어 후기9">|<img src="{{ site.baseurl }}/assets/img/2024-01-22-project-undervalue-alphasquare_comment10.jpeg" alt="알파스퀘어 후기10">|
 
 - **긍정 후기**
 
@@ -177,7 +177,7 @@ comments: true
 
 - UX, 간편하고 직관적인 UI
 
-    <img src="{{ site.baseurl }}/assets/img/2024-01-21-project-undervalue-alphasquare_ui.png" alt="알파스퀘어 UI">
+    <img src="{{ site.baseurl }}/assets/img/2024-01-22-project-undervalue-alphasquare_ui.png" alt="알파스퀘어 UI">
 
     '관심 기업 목록', '개별 종목' 그리고 '시장정보/종목정보/발굴분석/커뮤니티/트레이딩'을 삼분할로 한번에 확인할 수 있는 초기 화면
 
@@ -205,13 +205,14 @@ comments: true
 
 - 발굴 분석 시 적용 기간이 한정
 
-    <img src="{{ site.baseurl }}/assets/img/2024-01-21-project-undervalue-alphasquare_filter.png" alt="알파스퀘어 종목 필터">
+    <img src="{{ site.baseurl }}/assets/img/2024-01-22-project-undervalue-alphasquare_filter.png" alt="알파스퀘어 종목 필터">
 
     재무 지표는 기간이 최근 4분기 자료로 한정되고, 성장성 지표는 직전연도 대비 기준만 필터링에 사용 가능하다.
 
+### 뉴스 기사 속 CEO 인용
 
 <details>
-<summary><h3>뉴스 기사 속 CEO 인용</h3></summary>
+<summary><b>내용 확인하기</b></summary>
 <div markdown="1">
 <br>
 
@@ -242,8 +243,10 @@ comments: true
 </div>
 </details>
 
+### 히스토리
+
 <details>
-<summary><h3>히스토리</h3></summary>
+<summary><b>내용 확인하기</b></summary>
 <div markdown="1">
 <br>
 
