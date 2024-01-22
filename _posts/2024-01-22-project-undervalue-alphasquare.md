@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "[저평가 분석] 관련 앱 탐구 ③ - 알파스퀘어"
+title:  "[저평가 분석] 관련 앱 탐구 ④ - 알파스퀘어"
 subtitle:   "부제"
 categories: project
 tags: undervalue
