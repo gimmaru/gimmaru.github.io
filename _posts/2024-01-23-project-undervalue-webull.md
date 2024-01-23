@@ -30,9 +30,9 @@ Recently Viewed, Top 10(% Gainer 5 Mins), My watchlist, All Stocks, My Positions
 
 <img src="{{ site.baseurl }}/assets/img/2024-01-23-project-undervalue-webull_stocks.png" alt="Stocks" />
 
-2분할 창에서 다양한 정보를 텝 별로 제공한다.
+2번째 창에서 다양한 정보를 텝 별로 제공한다.
 
-Chart(매도/매수벽 확인 가능), Options(콜/풋 옵션확인 가능), Note, News, Financials, Analysis, Order Flow, Corp Actions, Releases, Profile 으로 구성된다.
+Chart(매도/매수벽 확인 가능), Options(콜/풋 옵션확인 가능), Note, News, Financials, Analysis, Order Flow, Corp Actions, Releases, Profile 로 구성된다.
 
 #### <u>Markets</u>
 
@@ -40,7 +40,7 @@ Chart(매도/매수벽 확인 가능), Options(콜/풋 옵션확인 가능), Not
 
 <img src="{{ site.baseurl }}/assets/img/2024-01-23-project-undervalue-webull_markets.png" alt="Markets" />
 
-각 시장 별로 확인할 수 있는 정보를 조금 다르다. 외부 API를 통해 정보를 받아서 제공하는 것 같다.
+각 시장 별로 확인할 수 있는 정보는 조금 다르다. 외부 API를 통해 정보를 받아서 제공하는 것 같다.
 
 #### <u>Screener</u>
 
@@ -82,11 +82,13 @@ Screeners, Option Screener, Top Options, Tops, Active, 52 Week, ETFs 텝으로 �
 
     - **부정 후기**
 
-        (210826) 여러 개 Watchlist 중 뒷 쪽에 위치한 Watchlist에서 한 종목을 확인하고 나면 가장 앞에 위치한 Watchlist로 돌아가서 불편하다.
+        한국 주식을 지원하지 않아서 불편하다.
+
+        한글 지원이 안돼서 불편하다.
+
+        (210826) 여러 개 Watchlist 중 뒤쪽에 위치한 Watchlist에서 한 종목을 확인하고 나면 맨 앞에 위치한 Watchlist로 돌아가서 불편하다.
 
         (201204) 배당금 합산될 때 세금 15% 제외하고 보여주면 좋겠다.
-
-        한국 주식을 지원하지 않아서 불편하다.
 
         (210925) 차트 세팅에서 타임존을 바꿔도 적용이 안 된다.
 
@@ -96,13 +98,11 @@ Screeners, Option Screener, Top Options, Tops, Active, 52 Week, ETFs 텝으로 �
 
         (190831) 세션만료 재로그인하라고 앱 실행할 때마다 떠서 불편하다.
 
-        한글 지원이 안돼서 불편하다.
-
         (200827) 잘 쓰고 있었는데 어느 순간 그래프가 잘 나오지 않는다.
 
         (210411) 은행에서 돈을 이체할 때 시간이 오래 걸린다.
 
-        (210311) 배터리 사용량 높다.
+        (210311) 배터리 사용량이 높다.
 
 - **블로그 후기**
     
@@ -114,7 +114,7 @@ Screeners, Option Screener, Top Options, Tops, Active, 52 Week, ETFs 텝으로 �
 
 ### 강점
 
-- UX/UI + 다양한 기능
+- UI/UX + 다양한 기능
 
     한 눈에 파악하기 쉬운 화면 구성
 
@@ -149,9 +149,9 @@ Screeners, Option Screener, Top Options, Tops, Active, 52 Week, ETFs 텝으로 �
 
 알파스퀘어에서 제공하는 기능 중 위불에는 없는 기능들이 있지만(지표 분석, 패턴 분석, 테마 종목 등), 알파스퀘어가 위불을 어느 정도 참고한 것 같다.
 
-알파스퀘어의 종목 발굴 기능과 위불의 스크리너 기능을 참고해서 저평가 분석기의 주식 필터의 완성도를 높일 수 있을 것 같다.
+알파스퀘어의 종목 발굴 기능과 위불의 스크리너 기능을 참고해서 저평가 분석기의 주식 필터 완성도를 높일 수 있을 것 같다.
 
-후기를 보면 UI/UX가 정보 파악이 쉽고 사용이 편하다는 내용이 많다. 알파스퀘어도 그랬다. 이후 UI를 구성할 때 참고하면 완성도를 높일 때 도움이 될 것이다.
+후기를 보면 UI가 정보 파악이 쉽고 사용이 편하다는 내용이 많다. 이후 UI를 구성할 때 참고하면 완성도를 높일 때 도움이 될 것이다.
 
 그리고 다양한 기능에 대한 긍정적인 반응을 많이 확인할 수 있었다. 저평가 분석기에 구현할 핵심 기능을 추리는 게 필요하다고 판단하고 있는데 위불 기능도 참고해야겠다.
 
@@ -168,4 +168,4 @@ Screeners, Option Screener, Top Options, Tops, Active, 52 Week, ETFs 텝으로 �
 |호기심 반짝                |[미국 주식 거래 시간(정규, 프리마켓, 애프터마켓, 데이마켓)](https://wean.co.kr/entry/%EB%AF%B8%EA%B5%AD-%EC%A3%BC%EC%8B%9D-%EA%B1%B0%EB%9E%98-%EC%8B%9C%EA%B0%84-%EC%A0%95%EA%B7%9C-%ED%94%84%EB%A6%AC%EB%A7%88%EC%BC%93-%EC%95%A0%ED%94%84%ED%84%B0%EB%A7%88%EC%BC%93-%EB%8D%B0%EC%9D%B4%EB%A7%88%EC%BC%93)|230704|
 |네이버 블로그              |[서학개미라면 필수 미국주식어플 위불 webull 사용하는 방법](https://blog.naver.com/somvly1004/223023159662)                                                        |230223|
 |네이버 블로그              |[호주에서 주식하기 - 위불 (Webull) 이용후기 + 보너스 주식 (feat. 35만원)](https://blog.naver.com/hoonjilim/223074660901)                                          |230414|
-|네이버 블로그              |[미국주식 <위불 webull> 완전 내스타일](https://blog.naver.com/allintime/222423183930)                                                                             |210707|
+|네이버 블로그              |[미국주식 \<위불 webull\> 완전 내스타일](https://blog.naver.com/allintime/222423183930)                                                                           |210707|
