@@ -63,7 +63,7 @@ AI와 투자에 관심있는 학생입니다.
 ---
 
 ## Publications
-### **2023**
+### **2024**
 - **[Improving Probability-based Prompt Selection Through Unified Evaluation and Analysis](https://arxiv.org/abs/2305.14877)**, *TACL 2024*
   
   Sohee Yang, **Jonghyeon Kim**, Joel Jang, Seonghyeon Ye, Hyunji Lee, Minjoon Seo
