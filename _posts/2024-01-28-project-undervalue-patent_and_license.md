@@ -184,5 +184,4 @@ CCL은 저작물을 공유할 때 유용한 라이선스다. 추후 배포하고
 |메타특허법률사무소         |[소프트웨어 보호 전략: 저작권과 특허의 차이와 선택](https://www.metaip.co.kr/home/meta-news/ip-news/?vid=3)                                                       |231218|
 |네이버 지식백과, 시사상식사전|[CCL](https://terms.naver.com/entry.naver?docId=2429843&cid=43667&categoryId=43667)                                                                             |210706|
 |나무위키                   |[크리에이티브 커먼즈 라이선스](https://namu.wiki/w/%ED%81%AC%EB%A6%AC%EC%97%90%EC%9D%B4%ED%8B%B0%EB%B8%8C%20%EC%BB%A4%EB%A8%BC%EC%A6%88%20%EB%9D%BC%EC%9D%B4%EC%84%A0%EC%8A%A4)                                                                   |240118|
-
-
+|creative commons license   |[01. 라이선스 적용 가이드](https://ccl.cckorea.org/application/choose/)                                                                                           |-     |
