@@ -16,11 +16,10 @@ comments: true
 
 인간의 정신적인 창작활동은 범위가 매우 넓다. 예술인들이 만드는 작품이나 음악부터 프로그래머가 만드는 컴퓨터 프로그램, 게임, 사람이 열심히 연구해서 만들어 낸 신제품 등이 전부 해당된다. 그래서 지식재산권은 크게 저작권과 산업재산권으로 나뉜다.
 
+<br />
 <center>
 <img src="{{ site.baseurl }}/assets/img/2024-01-28-project-undervalue-patent_and_license_intellectual_property_right.png" alt="지식재산권 유형 요약">
-<br />
-
-**지식재산권 유형 요약**
+<b>지식재산권 유형 요약</b>
 </center>
 <br />
 
