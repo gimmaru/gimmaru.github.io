@@ -53,7 +53,7 @@ comments: true
 
 ### 대표적인 오픈소스 라이선스
 
-1. GPL(General Purposed License)
+1. GPL(General Public License)
 
     "제품을 만들 때 제품 소스코드를 다 공개할 게 아니라면 쓰지 마세요"
 
