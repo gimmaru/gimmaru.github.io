@@ -1,6 +1,6 @@
 ---
 layout: tag-blog
-title: Etc.
+title: Etc
 slug: etc
 category: study
 menu: false
