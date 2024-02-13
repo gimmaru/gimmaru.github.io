@@ -65,7 +65,7 @@ def get_corp_code(DART_API_KEY: str) -> pd.DataFrame:
         return pd.DataFrame(corp_code_dict['result']['list'])
     else:
         status_code = xmltodict.parse(corp_code_byte.content)['result']['status']
-        assert status_code == '200', f'{status_code} Error\n\nCheck Message Explanation: https://opendart.fss.or.kr/guide/detail.do?apiGrpCd=DS001&apiId=2019018'
+        assert status_code == '000', f'{status_code} Error\n\nCheck Message Explanation: https://opendart.fss.or.kr/guide/detail.do?apiGrpCd=DS001&apiId=2019018'
 ```
 
 요청URL의 뒷 부분에 '?'를 붙이고 요청키와 발급받은 다트 API 키를 넘겨주었다. [URL에서 ?](https://znos.tistory.com/30)는 GET 방식으로 서버에 데이터를 요청할 때 사용된다. ? 뒤에서부터 요청할 데이터가 작성된다는 의미이다.
