@@ -25,7 +25,7 @@ keyring.get_password("system", "username")
 
 ## 고유번호 불러오기
 
-그러면 고유번호 API 개발가이드를 살펴보자. 오픈 다트 API에서는 각 기업을 식별할 때 기업 고유번호를 사용한다. 기업 고유번호는 고유번호 API로 확인할 수 있으므로 다른 API를 사용하기 위해 먼저 알아둘 필요가 있다.
+고유번호 API 개발가이드를 살펴보자. 오픈 다트 API에서는 각 기업을 식별할 때 기업 고유번호를 사용한다. 기업 고유번호는 고유번호 API로 확인할 수 있으므로 다른 API를 사용하기 위해 먼저 알아둘 필요가 있다.
 
 ![고유번호 개발가이드]({{ site.baseurl }}/assets/img/2024-02-13-project-undervalue-open_dart_api-dev_guide_corp_code.png)
 <center><b><a href="https://opendart.fss.or.kr/guide/detail.do?apiGrpCd=DS001&apiId=2019018" target="_black">고유번호 개발가이드</a></b></center>
@@ -328,7 +328,14 @@ print( df_code.loc[df_code['corp_name'] == '삼성제약', 'corp_code'].values[0
 
 
 ```python
-def get_financial_statements(DART_API_KEY: str, CORP_CODE: str, BSNS_YEAR: str, REPRT_CODE: str, FS_DIV: str):
+def get_financial_statements(
+    DART_API_KEY: str, 
+    CORP_CODE: str, 
+    BSNS_YEAR: str, 
+    REPRT_CODE: str, 
+    FS_DIV: str
+) -> pd.DataFrame:
+
     fs_url = f"https://opendart.fss.or.kr/api/fnlttSinglAcntAll.json?crtfc_key={DART_API_KEY}&corp_code={CORP_CODE}&bsns_year={BSNS_YEAR}&reprt_code={REPRT_CODE}&fs_div={FS_DIV}"
     fs_raw = requests.get(fs_url)
     assert fs_raw.status_code == 200, f"{fs_raw.status_code} HTTP Error\n\n See the following sites: https://httpstatusdogs.com/"
