@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "[영어] 막힌 문장 분석 (~ 24.02.15)"
+title:  "[영어] 막힌 문장 분석 (~ 24.02.17)"
 subtitle:   "부제"
 categories: study
 tags: etc
@@ -406,7 +406,34 @@ S: <u>This</u> V: <u>is</u> C: <u>a non-exhaustive list</u> ( of features that S
 </div>
 </details>
 
+### 240217
+
+---
+출처: [Starting 2024 strong with Flutter and Dart](https://medium.com/flutter/starting-2024-strong-with-flutter-and-dart-cae9845264fe)
+
+As always, these roadmaps are born from a desire to be open about our plans as we know many of you consider Flutter and Dart to be essential components in your careers and businesses.
+
+<details>
+<summary><b>분석</b></summary>
+<div markdown="1">
 <br />
+
+( As always ), S: <u>these roadmaps</u> V: <u>are</u> C: <u>born</u> ( from a desire to be open about our plans ) ( as we know many of you consider Flutter and Dart to be essential components in your careers and businesses ).
+
+~~언제나 그렇듯, 이러한 로드맵은 커리어와 비즈니스에 플러터와 다트를 필수 요소로 고려하는 많은 사람들이 우리의 계획을 알고 싶어하는 욕구에서 만들어진다.~~
+
+> 언제나 그렇듯이 이러한 로드맵은 많은 분들이 Flutter와 Dart를 커리어와 비즈니스의 필수 요소로 여기고 있다는 것을 알고 있기 때문에 저희의 계획을 투명하게 공개하고자 하는 마음에서 탄생했습니다. (deepl)
+
+\* be open about: ···에 대해 숨기지 않다. \| 터놓다.
+
+these roadmaps are born: 이러한 로드맵은 탄생했다.
+
+from a desire to be open about our plans: 우리의 계획을 숨기고 싶지 않은 마음에서
+
+as we know many of you consider Flutter and Dart to be essential components in your careers and businesses: 많은 사람들이 플러터와 다트를 커리어와 비즈니스의 필수 요소로 고려하고 있다는 것을 알고 있기 때문에
+
+</div>
+</details>
 
 ## 참고자료
 
