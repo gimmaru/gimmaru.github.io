@@ -30,10 +30,10 @@ image:               /assets/img/hill_night02.png
 color:               '#4f86aa'
 
 # The font used for headings. Expects a string that is a valid CSS font-family value.
-font_heading:        "'Poor Story'"
+font_heading:        "'Gowun Dodum', 'Poor Story'"
 
 # The text font. Expects a string that is a valid CSS font-family value.
-font:                "'Gowun Dodum', 'IBM Plex Sans KR'"
+font:                "'IBM Plex Sans KR'"
 
 # The string encoding what fonts to fetch from Google Fonts.
 # See: https://qwtel.com/hydejack/docs/configuration/
