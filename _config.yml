@@ -30,14 +30,14 @@ image:               /assets/img/hill_night02.png
 color:               '#4f86aa'
 
 # The font used for headings. Expects a string that is a valid CSS font-family value.
-font_heading:        "'Gowun Dodum', 'Poor Story'"
+font_heading:        "'IBM Plex Sans KR', 'Poor Story'"
 
 # The text font. Expects a string that is a valid CSS font-family value.
-font:                "'Gowun Dodum', 'IBM Plex Sans KR', 'Noto Sans KR'"
+font:                "'IBM Plex Sans KR', 'Gowun Dodum'"
 
 # The string encoding what fonts to fetch from Google Fonts.
 # See: https://qwtel.com/hydejack/docs/configuration/
-google_fonts:        Poor+Story|IBM+Plex+Sans+KR|Gowun+Dodum|Noto+Sans+KR
+google_fonts:        Poor+Story|IBM+Plex+Sans+KR|Gowun+Dodum
 
 # If you do not use a Google Fonts, uncomment the line below
 # no_google_fonts:     true
