@@ -30,7 +30,7 @@ image:               /assets/img/hill_night02.png
 color:               '#4f86aa'
 
 # The font used for headings. Expects a string that is a valid CSS font-family value.
-font_heading:        "'IBM Plex Sans KR', 'Gowun Dodum', 'Roboto Slab', 'Sans-serif'"
+font_heading:        "'Poor Story', 'IBM Plex Sans KR', 'Gowun Dodum', 'Roboto Slab', 'Sans-serif'"
 
 # The text font. Expects a string that is a valid CSS font-family value.
 font:                "'IBM Plex Sans KR', 'Gowun Dodum', 'Roboto Slab', 'Sans-serif'"
