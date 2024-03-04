@@ -33,7 +33,7 @@ color:               '#4f86aa'
 font_heading:        "'Sunflower', 'IBM Plex Sans KR'"
 
 # The text font. Expects a string that is a valid CSS font-family value.
-font:                "'IBM Plex Sans KR'"
+font:                "'Sunflower', 'IBM Plex Sans KR'"
 
 # The string encoding what fonts to fetch from Google Fonts.
 # See: https://qwtel.com/hydejack/docs/configuration/
