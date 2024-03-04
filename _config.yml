@@ -37,7 +37,7 @@ font:                "'IBM Plex Sans KR', 'Gowun Dodum', 'Roboto Slab', 'Sans-se
 
 # The string encoding what fonts to fetch from Google Fonts.
 # See: https://qwtel.com/hydejack/docs/configuration/
-google_fonts:        IBM+Plex+Sans+KR|Gowun+Dodum|Roboto+Slab:700
+google_fonts:        Poor+Story|IBM+Plex+Sans+KR|Gowun+Dodum|Roboto+Slab:700
 
 # If you do not use a Google Fonts, uncomment the line below
 # no_google_fonts:     true
